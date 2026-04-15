@@ -8,3 +8,118 @@
 .minu-osa h2 {
     color: green;
 }
+/* === NASTJA SEKTSIOON === */
+.nastja-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    margin: 30px 0;
+}
+.nastja-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 32px;
+    max-width: 520px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    animation: nastja-ilmub 0.7s ease both;
+}
+@keyframes nastja-ilmub {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.nastja-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+.nastja-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #e94560;
+    flex-shrink: 0;
+}
+.nastja-foto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.nastja-nimi {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin: 0 0 4px 0;
+}
+.nastja-tiitel {
+    color: #e94560;
+    font-size: 0.85rem;
+    margin: 0;
+    letter-spacing: 0.05em;
+}
+.nastja-kirjeldus {
+    color: #b0c4de;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.nastja-kirjeldus strong {
+    color: #ffffff;
+}
+.nastja-teemad {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+.nastja-tag {
+    background: rgba(233, 69, 96, 0.15);
+    border: 1px solid rgba(233, 69, 96, 0.4);
+    color: #e94560;
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    transition: background 0.2s, transform 0.2s;
+    cursor: default;
+}
+.nastja-tag:hover {
+    background: rgba(233, 69, 96, 0.3);
+    transform: scale(1.05);
+}
+.nastja-nupud {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.nastja-link-nupp {
+    background: #e94560;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.15s;
+}
+.nastja-link-nupp:hover {
+    background: #c73652;
+    transform: translateY(-2px);
+}
+.nastja-hello-nupp {
+    background: transparent;
+    color: #b0c4de;
+    border: 1px solid rgba(176, 196, 222, 0.4);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.nastja-hello-nupp:hover {
+    background: rgba(176, 196, 222, 0.1);
+    color: #ffffff;
+    border-color: rgba(176, 196, 222, 0.7);
+}
