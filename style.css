@@ -8,3 +8,67 @@
 .minu-osa h2 {
     color: green;
 }
+.illia-section {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+
+    opacity: 0;
+    transform: translateY(30px);
+    animation: illiaFade 1s ease forwards;
+}
+
+.illia-title {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.illia-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* LINK */
+.illia-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #38bdf8;
+    color: #020617;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.illia-link:hover {
+    background: #0ea5e9;
+    transform: scale(1.1);
+}
+
+/* BUTTON */
+.illia-btn {
+    padding: 10px 20px;
+    background: #22c55e;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.illia-btn:hover {
+    background: #16a34a;
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* ANIMATION */
+@keyframes illiaFade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
