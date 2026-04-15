@@ -42,14 +42,12 @@
 
 .nikitan-avatar img { width: 100%; height: 100%; object-fit: cover; }
 
-/* Цветные бейджи */
 .nikitan-badge:nth-child(1) { background:#EEEDFE; color:#3C3489; border:1px solid #AFA9EC; }
 .nikitan-badge:nth-child(2) { background:#E1F5EE; color:#085041; border:1px solid #5DCAA5; }
 .nikitan-badge:nth-child(3) { background:#FAEEDA; color:#633806; border:1px solid #EF9F27; }
 .nikitan-badge:nth-child(4) { background:#FAECE7; color:#712B13; border:1px solid #F0997B; }
 .nikitan-badge:nth-child(5) { background:#E6F1FB; color:#0C447C; border:1px solid #85B7EB; }
 
-/* Цветные статы */
 .nikitan-stat:nth-child(1) { background:#EEEDFE; }
 .nikitan-stat:nth-child(1) .nikitan-stat-arv { color:#3C3489; }
 .nikitan-stat:nth-child(1) .nikitan-stat-silt { color:#534AB7; }
@@ -158,3 +156,4 @@
     color: green;
     min-height: 18px;
 }
+/* === Nikitan portfoolio === */
