@@ -31,6 +31,95 @@
         </button>
     </section>
 
+    <!-- NIKITA LITVINENKO OSA ALGUS -->
+    <section id="nikita-litvinenko-section" class="nikita-litvinenko-profile-card">
+        <div class="nikita-litvinenko-card-content">
+            <div class="nikita-litvinenko-avatar-title-container">
+                <div class="nikita-litvinenko-avatar-container">
+                    <div class="nikita-litvinenko-avatar-glow"></div>
+                    <img src="https://avatars.githubusercontent.com/u/195296126?v=4" alt="Nikita Litvinenko"
+                        class="nikita-litvinenko-avatar">
+                </div>
+                <h2 class="nikita-litvinenko-title">Nikita Litvinenko</h2>
+            </div>
+            <p id="nikita-litvinenko-greeting" class="nikita-litvinenko-description"
+                style="font-weight: 600; color: #ffffff; margin-top: 0;"></p>
+
+            <p class="nikita-litvinenko-description">Hei! Ma õpin Tallinna Tööstushariduskeskuses
+                noorem tarkvaraarendajaks. Siin on minu olulised lingid, kus on kõik
+                minu projektid ja õppematerjalid.</p>
+
+            <p class="nikita-litvinenko-description">Minu oskused:</p>
+
+            <div class="nikita-litvinenko-skills-grid">
+                <div class="nikita-litvinenko-skill-tag">HTML/CSS</div>
+                <div class="nikita-litvinenko-skill-tag">JavaScript</div>
+                <div class="nikita-litvinenko-skill-tag">C#</div>
+                <div class="nikita-litvinenko-skill-tag">C++</div>
+                <div class="nikita-litvinenko-skill-tag">Python</div>
+                <div class="nikita-litvinenko-skill-tag">SQL</div>
+                <div class="nikita-litvinenko-skill-tag">React</div>
+            </div>
+
+            <p class="nikita-litvinenko-description">Minu lingid:</p>
+            <div class="nikita-litvinenko-links">
+                <a href="https://nikitalitvinenko24.thkit.ee/" class="nikita-litvinenko-link-btn"
+                    target="_blank">Veebileht</a>
+                <a href="https://nikitalitvinenko24.thkit.ee/wp" class="nikita-litvinenko-link-btn"
+                    target="_blank">Wordpress</a>
+                <a href="https://github.com/nikita-lit" class="nikita-litvinenko-link-btn" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        const greetingElement = document.getElementById('nikita-litvinenko-greeting');
+        const hour = new Date().getHours();
+        let greeting = "Tere!";
+
+        if (hour >= 5 && hour < 12)
+            greeting = "Tere hommikust! 🌅";
+        else if (hour >= 12 && hour < 18)
+            greeting = "Tere päevast! ☀️";
+        else if (hour >= 18 && hour < 22)
+            greeting = "Tere õhtust! 🌙";
+        else
+            greeting = "Head ööd! ✨";
+
+        let i = 0;
+        function typeWriter() 
+        {
+            if (i < greeting.length) 
+            {
+                greetingElement.textContent += greeting.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100);
+            }
+        }
+        greetingElement.textContent = "";
+        typeWriter();
+
+        const skillTags = document.querySelectorAll('.nikita-litvinenko-skill-tag');
+        skillTags.forEach(tag => {
+            tag.addEventListener('click', () => {
+
+                tag.style.transform = 'scale(1.1)';
+                tag.style.backgroundColor = '#10b981';
+                tag.style.color = '#ffffff';
+
+                setTimeout(() => {
+                    alert(`Oled valinud oskuse: ${tag.innerText}`);
+                }, 50);
+
+                setTimeout(() => {
+                    tag.style.transform = 'scale(1)';
+                    tag.style.backgroundColor = '';
+                    tag.style.color = '';
+                }, 300);
+            });
+        });
+    </script>
+    <!-- NIKITA LITVINENKO OSA LÕPP -->
+
     <!-- MINU OSA ALGUS -->
     <section class="minu-osa">
         <h2>Minu ainemapp</h2>

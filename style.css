@@ -1134,3 +1134,138 @@
 .hello-btnmariia:hover {
     background: #d4a017;
 }
+
+/* NIKITA LITVINENKO OSA STIILID */
+.nikita-litvinenko-profile-card {
+    background: linear-gradient(135deg, #064e3b 0%, #059669 50%, #34d399 100%);
+    color: #ffffff;
+    padding: 3rem 2rem;
+    margin: 2rem auto;
+    max-width: 550px;
+    border-radius: 2rem;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.nikita-litvinenko-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px 0 5px;
+}
+
+.nikita-litvinenko-avatar-container {
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.nikita-litvinenko-avatar-glow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #10b981;
+    border-radius: 50%;
+    filter: blur(20px);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.nikita-litvinenko-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.nikita-litvinenko-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #ffffff !important;
+    margin: 0;
+}
+
+.nikita-litvinenko-avatar-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.nikita-litvinenko-description {
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin: 10px 0 10px 0;
+}
+
+.nikita-litvinenko-skills-grid {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+}
+
+.nikita-litvinenko-skill-tag {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nikita-litvinenko-skill-tag:hover {
+    background: #ffffff;
+    color: #1e3a8a;
+    transform: translateY(-5px) scale(1.1);
+}
+
+.nikita-litvinenko-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nikita-litvinenko-link-btn {
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff !important;
+    padding: 0.75rem 1.5rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.nikita-litvinenko-link-btn:hover {
+    background: #10b981;
+    border-color: #10b981;
+    transform: translateY(-2px);
+}
+
+.nikita-litvinenko-skill-info {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    color: #94a3b8;
+    transition: opacity 0.3s ease;
+}
