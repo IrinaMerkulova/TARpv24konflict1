@@ -30,7 +30,56 @@
         <button onclick="alert('Tere!')">Vajuta</button>
     </section>
     <!-- MINU OSA LÕPP -->
+    <section class="martin-rossakov-box">
+        <h2 id="martin-rossakov-heading">Martin Rossakov Ainemapp</h2>
 
+        <p class="martin-rossakov-desc">
+            Tere! Mina olen Martin Rossakov. See on minu ainemapp, kus näitan oma oskusi ja projekte veebiarenduses.
+        </p>
+
+        <a href="https://martinrossakov24.thkit.ee/index.html" target="_blank" class="martin-rossakov-btn">
+            Vaata portfooliot
+        </a>
+
+        <p class="martin-rossakov-desc">
+            Siin saad vaadata ka kõiki minu tehtud töid, kasutatud linke, infot minu kohta ning WordPress lehte:
+        </p>
+
+        <div class="martin-rossakov-links">
+            <a href="https://martinrossakov24.thkit.ee/teemad_lindig.html" target="_blank" class="martin-rossakov-small-btn">
+                Kõik lingid
+            </a>
+
+            <a href="https://martinrossakov24.thkit.ee/tood.html" target="_blank" class="martin-rossakov-small-btn">
+                Minu tööd
+            </a>
+
+            <a href="https://martinrossakov24.thkit.ee/info.html" target="_blank" class="martin-rossakov-small-btn">
+                Info minu kohta
+            </a>
+
+            <a href="https://martinrossakov24.thkit.ee/wp/" target="_blank" class="martin-rossakov-small-btn">
+                WordPress leht
+            </a>
+        </div>
+
+        <br>
+
+        <button onclick="martinAlert()" class="martin-rossakov-action">
+            Vajuta mind
+        </button>
+
+        <p id="martin-rossakov-text"></p>
+    </section>
+
+    <script>
+        function martinAlert() {
+            alert("Tere Martinilt! 👋");
+
+            document.getElementById("martin-rossakov-text").innerHTML =
+                "Ava lingid ja vaata minu töid! 🚀";
+        }
+    </script>
 
 
 </body>
