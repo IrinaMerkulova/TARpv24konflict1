@@ -77,6 +77,45 @@
         }
     </script>
     <!-- NASTJA OSA LÕPP -->
+    <!-- MARK OSA ALGUS -->
+    <section class="markjurgen-section">
+        <div class="markjurgen-card">
+            <div class="markjurgen-avatar">M</div>
+            <h2 class="markjurgen-title">Mark Jurgen ainemapp</h2>
+            <p class="markjurgen-motto">Ma õpin Tallinnas Tööstushariduskeskuses.<br>
+                Mul on põhiteadmised Pythonist, SQL-ist ning natuke ka C#, C++ ja JavaScriptist.<br>
+                Samuti olen töötanud väikeste projektidega, kasutades Node.js-i ja PHP-d.</p>
 
+            <div class="markjurgen-info">
+                <span class="markjurgen-badge">IT-õpilane</span>
+                <span class="markjurgen-badge">TARpv24</span>
+            </div>
+
+            <a class="markjurgen-link" href="https://markjurgen24.thkit.ee/index.html" target="_blank">
+                🔗 Vaata minu portfooliot
+            </a>
+
+            <div class="markjurgen-btns">
+                <button class="markjurgen-btn" onclick="markjurgenGreet()">Vajuta mind!</button>
+                <button class="markjurgen-btn markjurgen-btn-alt" onclick="markjurgenToggle()">Näita fakti</button>
+            </div>
+
+            <p class="markjurgen-fact" id="markjurgenFact" style="display:none;">
+                💡 Minu nimi on Mark, olen 20-aastane ja õpin programmeerijaks
+            </p>
+        </div>
+    </section>
+    <!-- MINU OSA LÕPP -->
+
+    <script>
+        function markjurgenGreet() {
+            const msgs = ["Tere! 👋", "Hei, kuidas läheb?", "Sinu kood töötab! ✅"];
+            alert(msgs[Math.floor(Math.random() * msgs.length)]);
+        }
+        function markjurgenToggle() {
+            const el = document.getElementById("markjurgenFact");
+            el.style.display = el.style.display === "none" ? "block" : "none";
+        }
+    </script>
 </body>
 </html>

@@ -123,3 +123,131 @@
     color: #ffffff;
     border-color: rgba(176, 196, 222, 0.7);
 }
+
+/* === MARKJURGEN SECTION === */
+.markjurgen-section {
+    margin: 20px;
+}
+
+.markjurgen-card {
+    border: 2px solid #7F77DD;
+    border-radius: 14px;
+    padding: 24px;
+    max-width: 420px;
+    background: linear-gradient(135deg, #EEEDFE 0%, #ffffff 100%);
+    font-family: sans-serif;
+    transition: box-shadow 0.3s;
+}
+
+.markjurgen-card:hover {
+    box-shadow: 0 4px 20px rgba(127, 119, 221, 0.35);
+}
+
+.markjurgen-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: #7F77DD;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.markjurgen-title {
+    color: #534AB7;
+    margin: 0 0 8px;
+    font-size: 20px;
+}
+
+.markjurgen-motto {
+    color: #5F5E5A;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.markjurgen-info {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.markjurgen-badge {
+    background: #CECBF6;
+    color: #3C3489;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+.markjurgen-link {
+    display: inline-block;
+    background: #534AB7;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    margin-bottom: 14px;
+    transition: background 0.2s;
+}
+
+.markjurgen-link:hover {
+    background: #3C3489;
+}
+
+.markjurgen-btns {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.markjurgen-btn {
+    padding: 8px 16px;
+    border: 1.5px solid #7F77DD;
+    border-radius: 8px;
+    background: white;
+    color: #534AB7;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.markjurgen-btn:hover {
+    background: #EEEDFE;
+}
+
+.markjurgen-btn:active {
+    transform: scale(0.97);
+}
+
+.markjurgen-btn-alt {
+    background: #7F77DD;
+    color: white;
+    border-color: #534AB7;
+}
+
+.markjurgen-btn-alt:hover {
+    background: #534AB7;
+}
+
+.markjurgen-fact {
+    margin-top: 14px;
+    padding: 10px 14px;
+    background: #E6F1FB;
+    border-left: 3px solid #378ADD;
+    border-radius: 0 8px 8px 0;
+    font-size: 14px;
+    color: #0C447C;
+    animation: markjurgenFadeIn 0.3s ease;
+}
+
+@keyframes markjurgenFadeIn {
+    from { opacity: 0; transform: translateY(-6px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
