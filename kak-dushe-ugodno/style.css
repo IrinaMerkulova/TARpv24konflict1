@@ -59,3 +59,95 @@
     border: 1px solid #ddd;
     display: block;
 }
+
+.artjom-section {
+    background: #0d1b2a;
+    color: #cdd6f4;
+    border-radius: 14px;
+    padding: 28px;
+    margin: 24px auto;
+    max-width: 700px;
+    font-family: 'Segoe UI', sans-serif;
+    box-shadow: 0 6px 24px rgba(0,0,0,0.4);
+}
+
+.artjom-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.artjom-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.artjom-title {
+    color: #45e997;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.artjom-card {
+    background: #132336;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 16px;
+}
+
+.artjom-subtitle {
+    color: #45e997;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+.artjom-text {
+    line-height: 1.7;
+    margin: 0;
+}
+
+.artjom-list {
+    padding-left: 16px;
+    line-height: 2;
+    margin: 0;
+}
+
+.artjom-imgs {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.artjom-screen {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    border: 1px solid #45e997;
+}
+
+.artjom-btn {
+    background: #45e997;
+    color: #0d1b2a;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 4px;
+    transition: opacity 0.2s;
+}
+
+.artjom-btn:hover {
+    opacity: 0.85;
+}
+
+.artjom-extra {
+    display: none;
+    margin-top: 14px;
+    background: #132336;
+    border-radius: 10px;
+    padding: 16px;
+}
