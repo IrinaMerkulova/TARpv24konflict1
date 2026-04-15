@@ -8,95 +8,119 @@
 .minu-osa h2 {
     color: green;
 }
-/* === NASTJA SEKTSIOON === */
-.nastja-section {
+/* === ADRIANA SEKTSIOON === */
+.adriana-section {
     display: flex;
     justify-content: center;
     padding: 40px 20px;
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    background: linear-gradient(135deg, #0a0a1a 0%, #0d1b2a 50%, #0a2a3a 100%);
     margin: 30px 0;
 }
-.nastja-card {
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+
+.adriana-card {
+    background: rgba(0, 200, 255, 0.05);
+    border: 1px solid rgba(0, 200, 255, 0.2);
     border-radius: 16px;
     padding: 32px;
     max-width: 520px;
     width: 100%;
-    backdrop-filter: blur(10px);
-    animation: nastja-ilmub 0.7s ease both;
+    backdrop-filter: blur(12px);
+    animation: adriana-ilmub 0.7s ease both;
 }
-@keyframes nastja-ilmub {
+
+@keyframes adriana-ilmub {
     from { opacity: 0; transform: translateY(24px); }
     to   { opacity: 1; transform: translateY(0); }
 }
-.nastja-header {
+
+.adriana-header {
     display: flex;
     align-items: center;
     gap: 18px;
     margin-bottom: 20px;
 }
-.nastja-avatar {
+
+.adriana-avatar {
     width: 72px;
     height: 72px;
     border-radius: 50%;
     overflow: hidden;
-    border: 3px solid #e94560;
+    border: 3px solid #00c8ff;
     flex-shrink: 0;
+    background: rgba(0, 200, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.nastja-foto {
+
+.adriana-initsiaalid {
+    color: #00c8ff;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.adriana-foto {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.nastja-nimi {
+
+.adriana-nimi {
     color: #ffffff;
     font-size: 1.3rem;
     margin: 0 0 4px 0;
 }
-.nastja-tiitel {
-    color: #e94560;
+
+.adriana-tiitel {
+    color: #00c8ff;
     font-size: 0.85rem;
     margin: 0;
     letter-spacing: 0.05em;
 }
-.nastja-kirjeldus {
-    color: #b0c4de;
+
+.adriana-kirjeldus {
+    color: #a0c8d8;
     font-size: 0.95rem;
     line-height: 1.6;
     margin-bottom: 20px;
 }
-.nastja-kirjeldus strong {
+
+.adriana-kirjeldus strong {
     color: #ffffff;
 }
-.nastja-teemad {
+
+.adriana-teemad {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
     margin-bottom: 24px;
 }
-.nastja-tag {
-    background: rgba(233, 69, 96, 0.15);
-    border: 1px solid rgba(233, 69, 96, 0.4);
-    color: #e94560;
+
+.adriana-tag {
+    background: rgba(0, 200, 255, 0.12);
+    border: 1px solid rgba(0, 200, 255, 0.35);
+    color: #00c8ff;
     border-radius: 20px;
     padding: 4px 12px;
     font-size: 0.8rem;
     transition: background 0.2s, transform 0.2s;
     cursor: default;
 }
-.nastja-tag:hover {
-    background: rgba(233, 69, 96, 0.3);
+
+.adriana-tag:hover {
+    background: rgba(0, 200, 255, 0.25);
     transform: scale(1.05);
 }
-.nastja-nupud {
+
+.adriana-nupud {
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
 }
-.nastja-link-nupp {
-    background: #e94560;
-    color: #ffffff;
+
+.adriana-link-nupp {
+    background: #00c8ff;
+    color: #0a0a1a;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 8px;
@@ -104,22 +128,25 @@
     font-weight: 600;
     transition: background 0.2s, transform 0.15s;
 }
-.nastja-link-nupp:hover {
-    background: #c73652;
+
+.adriana-link-nupp:hover {
+    background: #00a8d8;
     transform: translateY(-2px);
 }
-.nastja-hello-nupp {
+
+.adriana-hello-nupp {
     background: transparent;
-    color: #b0c4de;
-    border: 1px solid rgba(176, 196, 222, 0.4);
+    color: #a0c8d8;
+    border: 1px solid rgba(0, 200, 255, 0.35);
     padding: 10px 20px;
     border-radius: 8px;
     font-size: 0.9rem;
     cursor: pointer;
     transition: all 0.2s;
 }
-.nastja-hello-nupp:hover {
-    background: rgba(176, 196, 222, 0.1);
+
+.adriana-hello-nupp:hover {
+    background: rgba(0, 200, 255, 0.1);
     color: #ffffff;
-    border-color: rgba(176, 196, 222, 0.7);
+    border-color: rgba(0, 200, 255, 0.7);
 }
