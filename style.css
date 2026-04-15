@@ -9,6 +9,1266 @@
     color: green;
 }
 
+.martin-rossakov-box {
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 22px;
+
+    border-radius: 16px;
+
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(0, 0, 0, 0.08);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    text-align: center;
+
+    animation: martinFadeIn 0.8s ease;
+}
+
+@keyframes martinFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+}
+.illia-section {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+
+    opacity: 0;
+    transform: translateY(30px);
+    animation: illiaFade 1s ease forwards;
+}
+
+.illia-title {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.illia-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* LINK */
+.illia-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #38bdf8;
+    color: #020617;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.illia-link:hover {
+    background: #0ea5e9;
+    transform: scale(1.1);
+}
+
+/* BUTTON */
+.illia-btn {
+    padding: 10px 20px;
+    background: #22c55e;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.illia-btn:hover {
+    background: #16a34a;
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* ANIMATION */
+@keyframes illiaFade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#martin-rossakov-heading {
+    font-size: 24px;
+    color: #1f2937;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.martin-rossakov-desc {
+    font-size: 14px;
+    color: #4b5563;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.martin-rossakov-btn {
+    display: inline-block;
+    padding: 10px 18px;
+
+    background: #111827;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    transition: 0.25s ease;
+}
+
+.martin-rossakov-btn:hover {
+    background: #374151;
+    transform: translateY(-2px);
+}
+
+.martin-rossakov-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+
+    margin: 15px 0;
+}
+
+.martin-rossakov-small-btn {
+    padding: 8px 10px;
+
+    background: #f3f4f6;
+    color: #111827;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+    font-size: 12px;
+
+    border: 1px solid rgba(0,0,0,0.06);
+
+    transition: 0.2s ease;
+}
+
+.martin-rossakov-small-btn:hover {
+    background: #e5e7eb;
+    transform: translateY(-2px);
+}
+
+.martin-rossakov-action {
+    margin-top: 10px;
+
+    padding: 10px 18px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.martin-rossakov-action:hover {
+    background: #1d4ed8;
+    transform: scale(1.05);
+}
+
+#martin-rossakov-text {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #374151;
+}
+/* === NASTJA SEKTSIOON === */
+.nastja-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    margin: 30px 0;
+}
+.nastja-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 32px;
+    max-width: 520px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    animation: nastja-ilmub 0.7s ease both;
+}
+@keyframes nastja-ilmub {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.nastja-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+.nastja-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #e94560;
+    flex-shrink: 0;
+}
+.nastja-foto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.nastja-nimi {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin: 0 0 4px 0;
+}
+.nastja-tiitel {
+    color: #e94560;
+    font-size: 0.85rem;
+    margin: 0;
+    letter-spacing: 0.05em;
+}
+.nastja-kirjeldus {
+    color: #b0c4de;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.nastja-kirjeldus strong {
+    color: #ffffff;
+}
+.nastja-teemad {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+.nastja-tag {
+    background: rgba(233, 69, 96, 0.15);
+    border: 1px solid rgba(233, 69, 96, 0.4);
+    color: #e94560;
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    transition: background 0.2s, transform 0.2s;
+    cursor: default;
+}
+.nastja-tag:hover {
+    background: rgba(233, 69, 96, 0.3);
+    transform: scale(1.05);
+}
+.nastja-nupud {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.nastja-link-nupp {
+    background: #e94560;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.15s;
+}
+.nastja-link-nupp:hover {
+    background: #c73652;
+    transform: translateY(-2px);
+}
+.nastja-hello-nupp {
+    background: transparent;
+    color: #b0c4de;
+    border: 1px solid rgba(176, 196, 222, 0.4);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.nastja-hello-nupp:hover {
+    background: rgba(176, 196, 222, 0.1);
+    color: #ffffff;
+    border-color: rgba(176, 196, 222, 0.7);
+}
+
+/* --- IGOR ALEKSEJEV --- */
+.igor-osa {
+    background-color: #0a0a0a;
+    color: #00ff41;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 650px;
+    border: 1px solid #1a1a1a;
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.15);
+    position: relative;
+}
+
+/* Terminali ülaäär */
+.igor-terminal-header {
+    background: #1a1a1a;
+    padding: 8px 15px;
+    margin: -30px -30px 20px -30px;
+    display: flex;
+    align-items: center;
+}
+
+.igor-dot {
+    height: 10px;
+    width: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.igor-title {
+    font-size: 12px;
+    color: #888;
+    margin-left: 10px;
+}
+
+/* PILDI DISAIN - Karm ja glitchy */
+.igor-image-wrapper {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 20px;
+    border: 2px solid #00ff41;
+    overflow: hidden;
+    filter: grayscale(100%) contrast(120%);
+}
+
+.igor-pilt {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Skaneerimisjooned pildil */
+.igor-glitch-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+}
+
+/* Teksti stiilid */
+.igor-h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px #ff000033;
+}
+
+.igor-data {
+    border-left: 2px solid #00ff41;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.igor-highlight {
+    background: #00ff41;
+    color: #000;
+    padding: 0 5px;
+}
+
+/* Nupud ja Lingid */
+.igor-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.igor-link, .igor-btn {
+    padding: 10px 20px;
+    border: 1px solid #00ff41;
+    color: #00ff41;
+    text-decoration: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* HOVER EFEKTID (nõutud) */
+.igor-link:hover, .igor-btn:hover {
+    background: #00ff41;
+    color: #000;
+    box-shadow: 0 0 15px #00ff41;
+    transform: scale(1.05);
+}
+
+.igor-p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+/* --- IGOR LETTER GLITCH TÄIENDUS --- */
+
+.igor-osa {
+    position: relative;
+    background-color: #0a0a0a;
+    overflow: hidden;
+}
+
+/* See teeb sisu loetavaks tausta peal */
+.igor-terminal-header,
+.igor-content {
+    position: relative;
+    z-index: 2;
+    /* Lisame tekstile väikse varju, et see "glitchi" pealt paremini välja paistaks */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+/* Valikuline: lisa sektsioonile kerge punane kuma servadesse */
+.igor-osa::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    box-shadow: inset 0 0 100px rgba(224, 21, 21, 0.2);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Glitch animatsioon pealkirjale, kui hiirega peale minna */
+.igor-h2:hover {
+    animation: igor-text-glitch 0.2s infinite;
+}
+
+@keyframes igor-text-glitch {
+    0% { transform: translate(0); }
+    25% { transform: translate(2px, -2px); text-shadow: 2px 0 red; }
+    50% { transform: translate(-2px, 2px); text-shadow: -2px 0 green; }
+    75% { transform: translate(1px, 1px); }
+    100% { transform: translate(0); }
+}
+.igor-osa {
+    cursor: crosshair; /* Muudame kursori sihikuks, et sobiks teemaga */
+}
+
+/* Veendu, et sisu ei takistaks klikkimist taustale, kui soovid sädemeid igal pool */
+.igor-content {
+    pointer-events: auto;
+}
+/* ---------IGOR LÕPP-------------------*/
+/* ======= OLEKSANDRA RYSHNIAK ======= */
+.oleksa-section {
+    border: 2px solid #c4956a;
+    border-radius: 14px;
+    overflow: hidden;
+    max-width: 600px;
+    margin: 2rem 20px;
+    box-shadow: 0 0 0 2px #c4956a;
+}
+.oleksa-top {
+    background: #e8d5b7;
+    padding: 2rem 2rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    border-bottom: 2px solid #d4bc9a;
+}
+.oleksa-initials {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: #c4956a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+    flex-shrink: 0;
+    border: 3px solid #fff;
+}
+.oleksa-section .oleksa-name {
+    margin: 0 0 4px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #3a2a1a;
+}
+.oleksa-section .oleksa-role {
+    margin: 0;
+    font-size: 19px;
+    color: #7a5c3a;
+    letter-spacing: 0.4px;
+}
+.oleksa-body {
+    background: #fff;
+    padding: 1.5rem 2rem;
+}
+.oleksa-section .oleksa-bio {
+    font-size: 16px;
+    line-height: 1.75;
+    color: #555;
+    margin: 0 0 1.4rem;
+}
+.oleksa-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 1.5rem;
+}
+.oleksa-section .oleksa-skill {
+    background: #faf8f5;
+    border: 1px solid #e8ddd0;
+    border-radius: 8px;
+    padding: 12px 14px;
+    transition: border-color 0.2s, background 0.2s;
+    cursor: default;
+}
+.oleksa-section .oleksa-skill:hover {
+    border-color: #c4956a;
+    background: #fdf5ec;
+}
+.oleksa-section .oleksa-skill-name {
+    font-size: 19px;
+    font-weight: 600;
+    color: #3a2a1a;
+    margin: 0 0 4px;
+}
+.oleksa-section .oleksa-skill-sub {
+    font-size: 15px;
+    color: #9a8070;
+    margin: 0;
+}
+.oleksa-section .oleksa-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #e8ddd0;
+    padding-top: 1rem;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.oleksa-section .oleksa-contact {
+    font-size: 17px;
+    color: #9a8070;
+}
+.oleksa-section .oleksa-btn {
+    display: inline-block;
+    background: #c4956a;
+    color: #fff;
+    border-color: white;
+    border-radius: 8px;
+    padding: 10px 22px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.15s;
+}
+.oleksa-section .oleksa-btn:hover {
+    background: #a87848;
+    transform: translateY(-1px);
+}
+.oleksa-section .oleksa-btn:active {
+    transform: scale(0.97);
+}
+.oleksa-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+/* ======= OLEKSANDRA RYSHNIAK LÕPP ======= */
+
+/* ARTJOM OSA ALGUS */
+.artjom-section {
+    background: #0d1b2a;
+    color: #eee;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 20px auto;
+    max-width: 500px;
+    font-family: sans-serif;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+
+.artjom-section:hover {
+    transform: translateY(-4px);
+}
+
+.artjom-title {
+    color: #45e997;
+    margin-bottom: 8px;
+}
+
+.artjom-btn {
+    margin-top: 12px;
+    padding: 8px 16px;
+    background: #45e997;
+    color: #1a1a2e;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.artjom-link {
+    color: #45e997;
+}
+/* ARTJOM OSA LÕPP */
+
+/* === ADRIANA SEKTSIOON === */
+.adriana-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #0a0a1a 0%, #0d1b2a 50%, #0a2a3a 100%);
+    margin: 30px 0;
+}
+
+.adriana-card {
+    background: rgba(0, 200, 255, 0.05);
+    border: 1px solid rgba(0, 200, 255, 0.2);
+    border-radius: 16px;
+    padding: 32px;
+    max-width: 520px;
+    width: 100%;
+    backdrop-filter: blur(12px);
+    animation: adriana-ilmub 0.7s ease both;
+}
+
+@keyframes adriana-ilmub {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+.adriana-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.adriana-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #00c8ff;
+    flex-shrink: 0;
+    background: rgba(0, 200, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.adriana-initsiaalid {
+    color: #00c8ff;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.adriana-foto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.adriana-nimi {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin: 0 0 4px 0;
+}
+
+.adriana-tiitel {
+    color: #00c8ff;
+    font-size: 0.85rem;
+    margin: 0;
+    letter-spacing: 0.05em;
+}
+
+.adriana-kirjeldus {
+    color: #a0c8d8;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.adriana-kirjeldus strong {
+    color: #ffffff;
+}
+
+.adriana-teemad {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.adriana-tag {
+    background: rgba(0, 200, 255, 0.12);
+    border: 1px solid rgba(0, 200, 255, 0.35);
+    color: #00c8ff;
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    transition: background 0.2s, transform 0.2s;
+    cursor: default;
+}
+
+.adriana-tag:hover {
+    background: rgba(0, 200, 255, 0.25);
+    transform: scale(1.05);
+}
+
+.adriana-nupud {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.adriana-link-nupp {
+    background: #00c8ff;
+    color: #0a0a1a;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.15s;
+}
+
+.adriana-link-nupp:hover {
+    background: #00a8d8;
+    transform: translateY(-2px);
+}
+
+.adriana-hello-nupp {
+    background: transparent;
+    color: #a0c8d8;
+    border: 1px solid rgba(0, 200, 255, 0.35);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.adriana-hello-nupp:hover {
+    background: rgba(0, 200, 255, 0.1);
+    color: #ffffff;
+    border-color: rgba(0, 200, 255, 0.7);
+}
+/* ADRIANA OSA LÕPP */
+
+.maksim-section {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 0;
+    border-radius: 36px;
+    font-family: "Poppins", sans-serif;
+}
+
+.maksim-section h2 {
+    margin: 0;
+    color: #f8fbff;
+    font-size: clamp(1.9rem, 3.4vw, 3.4rem);
+    font-weight: 800;
+    line-height: 0.95;
+}
+
+.maksim-text {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.92);
+    line-height: 1.6;
+    font-size: 0.98rem;
+}
+
+.maksim-link,
+.maksim-social {
+    display: inline-flex;
+}
+
+.maksim-link,
+.maksim-social,
+.maksim-avatar-ring,
+.maksim-avatar {
+    align-items: center;
+    justify-content: center;
+}
+
+.maksim-link {
+    min-width: 200px;
+    padding: 12px 18px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.22);
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    backdrop-filter: blur(10px);
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.maksim-link:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-2px);
+}
+
+.maksim-card {
+    position: relative;
+    overflow: hidden;
+    width: min(100%, 820px);
+    max-width: 820px;
+    padding: 28px 32px;
+    border-radius: 36px;
+    border: 4px solid rgb(12, 61, 176);
+    background:
+        radial-gradient(circle at 18% 22%, rgba(125, 211, 252, 0.95) 0%, rgba(125, 211, 252, 0) 34%),
+        radial-gradient(circle at 82% 26%, rgba(244, 114, 182, 0.92) 0%, rgba(244, 114, 182, 0) 30%),
+        radial-gradient(circle at 58% 82%, rgba(99, 102, 241, 0.92) 0%, rgba(99, 102, 241, 0) 32%),
+        radial-gradient(circle at 38% 46%, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0) 24%),
+        #4f46e5;
+    box-shadow: 0 24px 70px rgba(59, 130, 246, 0.24);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease, border-color 0.3s ease;
+}
+
+.maksim-card--active {
+    transform: translateY(-4px) scale(1.01);
+    box-shadow: 0 30px 90px rgba(236, 72, 153, 0.28);
+    filter: saturate(1.08);
+}
+
+.maksim-status {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 0.92rem;
+}
+
+.maksim-extra {
+    display: grid;
+    grid-template-rows: 0fr;
+    overflow: hidden;
+    pointer-events: none;
+    transition: grid-template-rows 0.4s ease, margin-top 0.4s ease;
+}
+
+.maksim-card--active .maksim-extra {
+    grid-template-rows: 1fr;
+    margin-top: 4px;
+    pointer-events: auto;
+}
+
+.maksim-extra-inner {
+    min-height: 0;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.25s ease, transform 0.4s ease;
+}
+
+.maksim-card--active .maksim-extra .maksim-extra-inner {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.maksim-button {
+    min-width: 176px;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 999px;
+    background: #ffffff;
+    color: #111111;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.maksim-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 26px rgba(17, 17, 17, 0.16);
+}
+
+.maksim-layout {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.maksim-visual {
+    position: relative;
+    flex: 0 0 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.maksim-avatar-ring {
+    display: flex;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.maksim-avatar {
+    display: flex;
+    width: 126px;
+    height: 126px;
+    border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.92);
+}
+
+.maksim-avatar-text {
+    color: #111111;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.maksim-content {
+    position: relative;
+    z-index: 1;
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.maksim-eyebrow {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+}
+
+.maksim-role {
+    margin: -4px 0 2px;
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.maksim-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.maksim-socials {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.maksim-social {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.18);
+    color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: lowercase;
+    backdrop-filter: blur(10px);
+    transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.maksim-social svg {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+.maksim-social:hover {
+    background: rgba(255, 255, 255, 0.28);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 860px) {
+    .maksim-card {
+        width: 100%;
+        max-width: 100%;
+        padding: 26px 22px;
+    }
+
+    .maksim-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .maksim-content {
+        align-items: center;
+    }
+
+    .maksim-actions {
+        justify-content: center;
+    }
+
+    .maksim-socials {
+        justify-content: center;
+    }
+
+    .maksim-visual {
+        flex-basis: auto;
+    }
+
+    .maksim-avatar-ring {
+        width: 150px;
+        height: 150px;
+    }
+
+    .maksim-avatar {
+        width: 110px;
+        height: 110px;
+    }
+
+    .maksim-avatar-text {
+        font-size: 1.7rem;
+    }
+}
+
+@media (max-width: 520px) {
+    .maksim-card {
+        padding: 22px 16px;
+        border-radius: 28px;
+    }
+
+    .maksim-link,
+    .maksim-button {
+        width: 100%;
+    }
+}
+.mariia-section {
+    background: #1a1a1a;
+    padding: 25px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 12px rgba(255, 215, 0, 0.3);
+    color: #f2f2f2;
+    width: 50%;
+
+}
+
+.mariia-section h2 {
+    color: #004aad;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.mariia-info {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 10px;
+    background: #262626;
+    border-left: 5px solid #ffd700;
+}
+
+.mariia-section h2,
+.mariia-info h3 {
+    color: #ffd700;
+}
+
+.mariia-info ul {
+    padding-left: 20px;
+}
+
+.mariia-info li {
+    margin-bottom: 6px;
+    color: White;
+}
+.mariia-pilt {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+.portfoliomariia-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffd700;
+    color: #1a1a1a;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.portfoliomariia-btn:hover {
+    background: #ffea80;
+}
+
+.hello-btnmariia {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background: #b8860b;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hello-btnmariia:hover {
+    background: #d4a017;
+}
+
+/* NIKITA LITVINENKO OSA STIILID */
+.nikita-litvinenko-profile-card {
+    background: linear-gradient(135deg, #064e3b 0%, #059669 50%, #34d399 100%);
+    color: #ffffff;
+    padding: 3rem 2rem;
+    margin: 2rem auto;
+    max-width: 550px;
+    border-radius: 2rem;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.nikita-litvinenko-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 5px 0 5px;
+}
+
+.nikita-litvinenko-avatar-container {
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    position: relative;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.nikita-litvinenko-avatar-glow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #10b981;
+    border-radius: 50%;
+    filter: blur(20px);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.nikita-litvinenko-avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.nikita-litvinenko-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #ffffff !important;
+    margin: 0;
+}
+
+.nikita-litvinenko-avatar-title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.nikita-litvinenko-description {
+    font-size: 1.1rem;
+    color: #cbd5e1;
+    line-height: 1.6;
+    margin: 10px 0 10px 0;
+}
+
+.nikita-litvinenko-skills-grid {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+}
+
+.nikita-litvinenko-skill-tag {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nikita-litvinenko-skill-tag:hover {
+    background: #ffffff;
+    color: #1e3a8a;
+    transform: translateY(-5px) scale(1.1);
+}
+
+.nikita-litvinenko-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nikita-litvinenko-link-btn {
+    background: rgba(255, 255, 255, 0.05);
+    color: #ffffff !important;
+    padding: 0.75rem 1.5rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.nikita-litvinenko-link-btn:hover {
+    background: #10b981;
+    border-color: #10b981;
+    transform: translateY(-2px);
+}
+
+.nikita-litvinenko-skill-info {
+    margin-top: 2rem;
+    font-size: 0.875rem;
+    color: #94a3b8;
+    transition: opacity 0.3s ease;
+}
 /* === Nikitan portfoolio === */
 .nikitan-section {
     display: flex;
