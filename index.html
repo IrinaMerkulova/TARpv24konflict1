@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="et">
+
 <head>
     <meta charset="UTF-8">
     <title>Ainemapid</title>
 
     <!-- CSS link -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
     <h1>TARpv24 Õpilaste ainemapid</h1>
@@ -18,20 +21,73 @@
     <!-- MINU OSA ALGUS -->
     <section class="minu-osa">
         <h2>Minu ainemapp</h2>
-        
+
         <p>Minu elu moto!</p>
-        
+
         <a href="SIIA_SINU_LINK" target="_blank">
             Vaata minu lehte
         </a>
-        
+
         <br><br>
-        
+
         <button onclick="alert('Tere!')">Vajuta</button>
     </section>
     <!-- MINU OSA LÕPP -->
+    <section class="hussein-section">
+        <h2>Hussein Tahmazov ainemapp</h2>
 
+        <div class="hussein-card">
 
+            <div class="hussein-top">
+                <img src="images/Hussik.jpg" alt="Hussein" class="hussein-profile-img">
+                <span class="hussein-badge">TARpv24 tarkvaraarendaja</span>
+            </div>
 
+            <div class="hussein-bottom">
+                <h3>Hussein Tahmazov</h3>
+                <p>
+                    Olen THHK (Tallinna Tööhariduskeskus) õpilane ja õpin programmeerimist. Keskendun peamiselt mängude
+                    arendamisele ning olen osalenud mitmes projektis, millest
+                    üks tuntum on „Approaching Bearable 2“.
+                </p>
+
+                <button onclick="showMessage()">Rohkem infot</button>
+
+                <div id="hussein-more-info" class="hussein-hidden-info">
+                    <p>Õpin Tallinna tööshariduskeskuses (TARpv24).</p>
+                    <p>Minu eesmärk on aidata inimesi oma programmide abil.</p>
+                    <p>Oskused: HTML, CSS, JavaScript, PHP, Python, MySQL, C#, Lua, C++.</p>
+                </div>
+            </div>
+
+            <div class="hussein-social-links">
+                <a href="https://github.com/afunne" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://www.roblox.com/users/2741083612/profile" target="_blank">
+                    <img src="https://img.icons8.com/?size=10&id=On1mXgF3RZRN&format=png&color=000000"
+                        class="hussein-social-icon">
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        function showMessage() {
+            const info = document.getElementById("hussein-more-info");
+            const btn = document.querySelector(".hussein-bottom button");
+
+            info.classList.toggle("show");
+
+            if (info.classList.contains("show")) {
+                btn.textContent = "Vähem infot";
+            } else {
+                btn.textContent = "Rohkem infot";
+            }
+        }
+    </script>
 </body>
+
 </html>
