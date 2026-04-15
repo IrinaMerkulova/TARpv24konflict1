@@ -3,35 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Ainemapid</title>
-
     <!-- CSS link -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <h1>TARpv24 Õpilaste ainemapid</h1>
+    <!-- Mariia OSA ALGUS -->
+    <section class="mariia-section">
+        <h2><img src="mariia_pilt/Mariia_pilt.png" alt="Mariia foto" class="mariia-pilt">Minu portfoolio</h2>
+        <p>Tere! Minu nimi on Mariia. Olen TARpv24 rühma õpilane. Siit leiad minu tööd ja projektid.</p>
 
-    <!-- SIIN võivad olla teiste õpilaste osad -->
+        <div class="mariia-info">
+            <h3>Minust lähemalt</h3>
+            <ul>
+                <li>Õpin tarkvaraarendust ja naudin veebilehtede loomist.</li>
+                <li>Mind huvitavad disain, animatsioonid ja kasutajakogemus.</li>
+                <li>Arendan end HTML, CSS, JavaScripti ja PHP valdkondades.</li>
+            </ul>
+        </div>
 
+        <a href="https://mariiaposvystak24.thkit.ee" class="portfoliomariia-btn" target="_blank">Ava portfoolio</a>
 
-
-    <!-- MINU OSA ALGUS -->
-    <section class="minu-osa">
-        <h2>Minu ainemapp</h2>
-        
-        <p>Minu elu moto!</p>
-        
-        <a href="SIIA_SINU_LINK" target="_blank">
-            Vaata minu lehte
-        </a>
-        
-        <br><br>
-        
-        <button onclick="alert('Tere!')">Vajuta</button>
+        <button class="hello-btnmariia" onclick="showMessage_mariia()">E-post</button>
     </section>
-    <!-- MINU OSA LÕPP -->
 
-
-
+    <script>
+        function showMessage_mariia() {
+            alert("Minu e-post on posvytsakmariia@gmail.com");
+        }
+    </script>
+    <!-- Mariia OSA LÕPP -->
 </body>
 </html>

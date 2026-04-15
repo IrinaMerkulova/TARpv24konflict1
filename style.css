@@ -1,10 +1,73 @@
-.minu-osa {
-    border: 2px solid green;
-    padding: 15px;
-    margin: 20px;
-    border-radius: 10px;
+.mariia-section {
+    background: #1a1a1a;
+    padding: 25px;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 12px rgba(255, 215, 0, 0.3);
+    color: #f2f2f2;
+    width: 50%;
+
 }
 
-.minu-osa h2 {
-    color: green;
+.mariia-section h2 {
+    color: #004aad;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.mariia-info {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 10px;
+    background: #262626;
+    border-left: 5px solid #ffd700;
+}
+
+.mariia-section h2,
+.mariia-info h3 {
+    color: #ffd700;
+}
+
+.mariia-info ul {
+    padding-left: 20px;
+}
+
+.mariia-info li {
+    margin-bottom: 6px;
+    color: White;
+}
+.mariia-pilt {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+}
+.portfoliomariia-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffd700;
+    color: #1a1a1a;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.portfoliomariia-btn:hover {
+    background: #ffea80;
+}
+
+.hello-btnmariia {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background: #b8860b;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hello-btnmariia:hover {
+    background: #d4a017;
 }
