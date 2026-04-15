@@ -8,3 +8,468 @@
 .minu-osa h2 {
     color: green;
 }
+
+.martin-rossakov-box {
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 22px;
+
+    border-radius: 16px;
+
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(0, 0, 0, 0.08);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    text-align: center;
+
+    animation: martinFadeIn 0.8s ease;
+}
+
+@keyframes martinFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+}
+.illia-section {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+
+    opacity: 0;
+    transform: translateY(30px);
+    animation: illiaFade 1s ease forwards;
+}
+
+.illia-title {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.illia-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* LINK */
+.illia-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #38bdf8;
+    color: #020617;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.illia-link:hover {
+    background: #0ea5e9;
+    transform: scale(1.1);
+}
+
+/* BUTTON */
+.illia-btn {
+    padding: 10px 20px;
+    background: #22c55e;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.illia-btn:hover {
+    background: #16a34a;
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* ANIMATION */
+@keyframes illiaFade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#martin-rossakov-heading {
+    font-size: 24px;
+    color: #1f2937;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.martin-rossakov-desc {
+    font-size: 14px;
+    color: #4b5563;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.martin-rossakov-btn {
+    display: inline-block;
+    padding: 10px 18px;
+
+    background: #111827;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    transition: 0.25s ease;
+}
+
+.martin-rossakov-btn:hover {
+    background: #374151;
+    transform: translateY(-2px);
+}
+
+.martin-rossakov-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+
+    margin: 15px 0;
+}
+
+.martin-rossakov-small-btn {
+    padding: 8px 10px;
+
+    background: #f3f4f6;
+    color: #111827;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+    font-size: 12px;
+
+    border: 1px solid rgba(0,0,0,0.06);
+
+    transition: 0.2s ease;
+}
+
+.martin-rossakov-small-btn:hover {
+    background: #e5e7eb;
+    transform: translateY(-2px);
+}
+
+.martin-rossakov-action {
+    margin-top: 10px;
+
+    padding: 10px 18px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.martin-rossakov-action:hover {
+    background: #1d4ed8;
+    transform: scale(1.05);
+}
+
+#martin-rossakov-text {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #374151;
+}
+/* === NASTJA SEKTSIOON === */
+.nastja-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    margin: 30px 0;
+}
+.nastja-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 32px;
+    max-width: 520px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    animation: nastja-ilmub 0.7s ease both;
+}
+@keyframes nastja-ilmub {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.nastja-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+.nastja-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #e94560;
+    flex-shrink: 0;
+}
+.nastja-foto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.nastja-nimi {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin: 0 0 4px 0;
+}
+.nastja-tiitel {
+    color: #e94560;
+    font-size: 0.85rem;
+    margin: 0;
+    letter-spacing: 0.05em;
+}
+.nastja-kirjeldus {
+    color: #b0c4de;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.nastja-kirjeldus strong {
+    color: #ffffff;
+}
+.nastja-teemad {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+.nastja-tag {
+    background: rgba(233, 69, 96, 0.15);
+    border: 1px solid rgba(233, 69, 96, 0.4);
+    color: #e94560;
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    transition: background 0.2s, transform 0.2s;
+    cursor: default;
+}
+.nastja-tag:hover {
+    background: rgba(233, 69, 96, 0.3);
+    transform: scale(1.05);
+}
+.nastja-nupud {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.nastja-link-nupp {
+    background: #e94560;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.15s;
+}
+.nastja-link-nupp:hover {
+    background: #c73652;
+    transform: translateY(-2px);
+}
+.nastja-hello-nupp {
+    background: transparent;
+    color: #b0c4de;
+    border: 1px solid rgba(176, 196, 222, 0.4);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.nastja-hello-nupp:hover {
+    background: rgba(176, 196, 222, 0.1);
+    color: #ffffff;
+    border-color: rgba(176, 196, 222, 0.7);
+}
+
+/* --- IGOR ALEKSEJEV --- */
+.igor-osa {
+    background-color: #0a0a0a;
+    color: #00ff41;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 650px;
+    border: 1px solid #1a1a1a;
+    box-shadow: 0 0 20px rgba(0, 255, 65, 0.15);
+    position: relative;
+}
+
+/* Terminali ülaäär */
+.igor-terminal-header {
+    background: #1a1a1a;
+    padding: 8px 15px;
+    margin: -30px -30px 20px -30px;
+    display: flex;
+    align-items: center;
+}
+
+.igor-dot {
+    height: 10px;
+    width: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.igor-title {
+    font-size: 12px;
+    color: #888;
+    margin-left: 10px;
+}
+
+/* PILDI DISAIN - Karm ja glitchy */
+.igor-image-wrapper {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 20px;
+    border: 2px solid #00ff41;
+    overflow: hidden;
+    filter: grayscale(100%) contrast(120%);
+}
+
+.igor-pilt {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Skaneerimisjooned pildil */
+.igor-glitch-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%),
+    linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+}
+
+/* Teksti stiilid */
+.igor-h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px #ff000033;
+}
+
+.igor-data {
+    border-left: 2px solid #00ff41;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.igor-highlight {
+    background: #00ff41;
+    color: #000;
+    padding: 0 5px;
+}
+
+/* Nupud ja Lingid */
+.igor-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.igor-link, .igor-btn {
+    padding: 10px 20px;
+    border: 1px solid #00ff41;
+    color: #00ff41;
+    text-decoration: none;
+    background: transparent;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* HOVER EFEKTID (nõutud) */
+.igor-link:hover, .igor-btn:hover {
+    background: #00ff41;
+    color: #000;
+    box-shadow: 0 0 15px #00ff41;
+    transform: scale(1.05);
+}
+
+.igor-p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+/* --- IGOR LETTER GLITCH TÄIENDUS --- */
+
+.igor-osa {
+    position: relative;
+    background-color: #0a0a0a;
+    overflow: hidden;
+}
+
+/* See teeb sisu loetavaks tausta peal */
+.igor-terminal-header,
+.igor-content {
+    position: relative;
+    z-index: 2;
+    /* Lisame tekstile väikse varju, et see "glitchi" pealt paremini välja paistaks */
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+}
+
+/* Valikuline: lisa sektsioonile kerge punane kuma servadesse */
+.igor-osa::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    box-shadow: inset 0 0 100px rgba(224, 21, 21, 0.2);
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Glitch animatsioon pealkirjale, kui hiirega peale minna */
+.igor-h2:hover {
+    animation: igor-text-glitch 0.2s infinite;
+}
+
+@keyframes igor-text-glitch {
+    0% { transform: translate(0); }
+    25% { transform: translate(2px, -2px); text-shadow: 2px 0 red; }
+    50% { transform: translate(-2px, 2px); text-shadow: -2px 0 green; }
+    75% { transform: translate(1px, 1px); }
+    100% { transform: translate(0); }
+}
+.igor-osa {
+    cursor: crosshair; /* Muudame kursori sihikuks, et sobiks teemaga */
+}
+
+/* Veendu, et sisu ei takistaks klikkimist taustale, kui soovid sädemeid igal pool */
+.igor-content {
+    pointer-events: auto;
+}
+/* ---------IGOR LÕPP-------------------*/
