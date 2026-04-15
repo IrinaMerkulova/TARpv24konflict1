@@ -13,7 +13,26 @@
 
     <!-- SIIN võivad olla teiste õpilaste osad -->
 
+    <section class="illia-section" id="illia">
+        <h2 class="illia-title">Illia ainemapp</h2>
 
+        <p class="illia-text">
+            Tere! Mina olen Illia. See on minu ainemapp, kus näitan oma töid ja arengut.
+        </p>
+
+        <a class="illia-link" href="https://illiablahun24.thkit.ee" target="_blank">
+            Vaata minu lehte
+        </a>
+
+        <br><br>
+
+        <button class="illia-btn" onclick="showMessage()">
+            Vajuta mind
+        </button>
+    </section>
+
+    <script src="illia.js"></script>
+    <link rel="stylesheet" href="illia.css">
 
     <!-- MINU OSA ALGUS -->
     <section class="minu-osa">
@@ -81,6 +100,52 @@
         }
     </script>
 
+    <!-- NASTJA OSA ALGUS -->
+    <section class="nastja-section">
+        <div class="nastja-card">
+            <div class="nastja-header">
+                <div class="nastja-avatar">
+                    <img src="images/nastja.png" alt="Anastasiia Radasheva" class="nastja-foto">
+                </div>
+                <div class="nastja-info">
+                    <h2 class="nastja-nimi">Anastasiia Radasheva</h2>
+                    <p class="nastja-tiitel">TARpv24 · Full-stack õppija</p>
+                </div>
+            </div>
+            <p class="nastja-kirjeldus">
+                Tere! Olen 18-aastane programmeerimishuvilane TTHKst.
+                Minu ainemapist leiad materjale <strong>Python, C#, SQL, Robotika</strong> ja
+                <strong>Veebirakenduste</strong> kohta.
+            </p>
+            <div class="nastja-teemad">
+                <span class="nastja-tag"> Python & OOP</span>
+                <span class="nastja-tag"> C#</span>
+                <span class="nastja-tag">SQL / Andmebaasid</span>
+                <span class="nastja-tag"> Robotika</span>
+                <span class="nastja-tag"> Web</span>
+            </div>
+            <div class="nastja-nupud">
+                <a href="https://anastasiiaradasheva24.thkit.ee/wp/eng/" target="_blank" class="nastja-link-nupp">
+                    Vaata minu ainemappi →
+                </a>
+                <button class="nastja-hello-nupp" onclick="nastjaHello()">Üllata mind!</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function nastjaHello() {
+            const teated = [
+                "Tere!  Vaata minu ainemappi — seal on palju huvitavat!",
+                "Fun fact: SQL on mu lemmik aine! ",
+                "Ma õpin TTHKs TARpv24 rühmas ",
+                "Olen ehitanud rakendusi C#, Python ja Webiga! "
+            ];
+            const juhuslik = teated[Math.floor(Math.random() * teated.length)];
+            alert(juhuslik);
+        }
+    </script>
+    <!-- NASTJA OSA LÕPP -->
 
 </body>
 </html>
