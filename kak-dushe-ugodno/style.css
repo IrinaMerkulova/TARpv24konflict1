@@ -1,0 +1,61 @@
+.igor-case-section {
+    padding: 20px 25px;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px;
+    margin: 30px auto;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: #333;
+    /* Увеличили ширину */
+    max-width: 600px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.igor-title {
+    color: #f45c2c;
+    border-bottom: 3px solid #f45c2c;
+    padding-bottom: 10px;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.case-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.case-header img {
+    width: 70px;
+    height: auto;
+}
+
+.case-list {
+    list-style: none;
+    padding: 0;
+    font-size: 0.95rem;
+}
+
+.case-list li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+    line-height: 1.4;
+}
+
+.case-list li::before {
+    content: "➔";
+    position: absolute;
+    left: 0;
+    color: #f45c2c;
+    font-weight: bold;
+}
+
+.case-screenshots img {
+    margin-top: 15px;
+    width: 100%; /* Картинка теперь займет все 600px */
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    display: block;
+}
