@@ -8,3 +8,38 @@
 .minu-osa h2 {
     color: green;
 }
+
+.artjom-section {
+    background: #1a1a2e;
+    color: #eee;
+    border-radius: 12px;
+    padding: 24px;
+    margin: 20px auto;
+    max-width: 500px;
+    font-family: sans-serif;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+
+.artjom-section:hover {
+    transform: translateY(-4px);
+}
+
+.artjom-title {
+    color: #e94560;
+    margin-bottom: 8px;
+}
+
+.artjom-btn {
+    margin-top: 12px;
+    padding: 8px 16px;
+    background: #e94560;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.artjom-link {
+    color: #a29bfe;
+}
