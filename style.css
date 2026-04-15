@@ -8,3 +8,369 @@
 .minu-osa h2 {
     color: green;
 }
+
+.martin-rossakov-box {
+    max-width: 420px;
+    margin: 60px auto;
+    padding: 22px;
+
+    border-radius: 16px;
+
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(0, 0, 0, 0.08);
+
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+    text-align: center;
+
+    animation: martinFadeIn 0.8s ease;
+}
+
+@keyframes martinFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+}
+.illia-section {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 40px auto;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+
+    opacity: 0;
+    transform: translateY(30px);
+    animation: illiaFade 1s ease forwards;
+}
+
+.illia-title {
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.illia-text {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* LINK */
+.illia-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #38bdf8;
+    color: #020617;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.illia-link:hover {
+    background: #0ea5e9;
+    transform: scale(1.1);
+}
+
+/* BUTTON */
+.illia-btn {
+    padding: 10px 20px;
+    background: #22c55e;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.illia-btn:hover {
+    background: #16a34a;
+    transform: translateY(-3px) scale(1.05);
+}
+
+/* ANIMATION */
+@keyframes illiaFade {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#martin-rossakov-heading {
+    font-size: 24px;
+    color: #1f2937;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.martin-rossakov-desc {
+    font-size: 14px;
+    color: #4b5563;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.martin-rossakov-btn {
+    display: inline-block;
+    padding: 10px 18px;
+
+    background: #111827;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 10px;
+
+    font-size: 14px;
+
+    transition: 0.25s ease;
+}
+
+.martin-rossakov-btn:hover {
+    background: #374151;
+    transform: translateY(-2px);
+}
+
+.martin-rossakov-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+
+    margin: 15px 0;
+}
+
+.martin-rossakov-small-btn {
+    padding: 8px 10px;
+
+    background: #f3f4f6;
+    color: #111827;
+
+    text-decoration: none;
+
+    border-radius: 8px;
+    font-size: 12px;
+
+    border: 1px solid rgba(0,0,0,0.06);
+
+    transition: 0.2s ease;
+}
+
+.martin-rossakov-small-btn:hover {
+    background: #e5e7eb;
+    transform: translateY(-2px);
+}
+
+.martin-rossakov-action {
+    margin-top: 10px;
+
+    padding: 10px 18px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #2563eb;
+    color: white;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.martin-rossakov-action:hover {
+    background: #1d4ed8;
+    transform: scale(1.05);
+}
+
+#martin-rossakov-text {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #374151;
+}
+/* === NASTJA SEKTSIOON === */
+.nastja-section {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    margin: 30px 0;
+}
+.nastja-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 32px;
+    max-width: 520px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+    animation: nastja-ilmub 0.7s ease both;
+}
+@keyframes nastja-ilmub {
+    from { opacity: 0; transform: translateY(24px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+.nastja-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+.nastja-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #e94560;
+    flex-shrink: 0;
+}
+.nastja-foto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.nastja-nimi {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin: 0 0 4px 0;
+}
+.nastja-tiitel {
+    color: #e94560;
+    font-size: 0.85rem;
+    margin: 0;
+    letter-spacing: 0.05em;
+}
+.nastja-kirjeldus {
+    color: #b0c4de;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.nastja-kirjeldus strong {
+    color: #ffffff;
+}
+.nastja-teemad {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+.nastja-tag {
+    background: rgba(233, 69, 96, 0.15);
+    border: 1px solid rgba(233, 69, 96, 0.4);
+    color: #e94560;
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 0.8rem;
+    transition: background 0.2s, transform 0.2s;
+    cursor: default;
+}
+.nastja-tag:hover {
+    background: rgba(233, 69, 96, 0.3);
+    transform: scale(1.05);
+}
+.nastja-nupud {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+.nastja-link-nupp {
+    background: #e94560;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.15s;
+}
+.nastja-link-nupp:hover {
+    background: #c73652;
+    transform: translateY(-2px);
+}
+.nastja-hello-nupp {
+    background: transparent;
+    color: #b0c4de;
+    border: 1px solid rgba(176, 196, 222, 0.4);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.nastja-hello-nupp:hover {
+    background: rgba(176, 196, 222, 0.1);
+    color: #ffffff;
+    border-color: rgba(176, 196, 222, 0.7);
+}
+/* ROMAN ZAITSEV STIIL */
+.roman-section {
+    max-width: 640px;
+    margin: 2rem auto;
+    border: 0.5px solid #e2e8f0;
+    border-radius: 12px;
+    background: #fff;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+.roman-header {
+    background: #1a1a2e;
+    padding: 1.5rem 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.roman-avatar-video {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    border: 2px solid #6366f1;
+}
+.roman-avatar-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.roman-header-text h2 { margin: 0 0 2px; font-size: 18px; color: #e2e8f0; font-weight: 500; }
+.roman-header-text p  { margin: 0; font-size: 13px; color: #94a3b8; }
+.roman-body { padding: 1.25rem 1.5rem; }
+.roman-bio { font-size: 14px; color: #555; line-height: 1.7; margin: 0 0 1rem; }
+.roman-skills { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 1.25rem; }
+.roman-skill {
+    background: #eef2ff;
+    color: #3730a3;
+    font-size: 12px;
+    padding: 4px 10px;
+    border-radius: 999px;
+    border: 0.5px solid #c7d2fe;
+    cursor: pointer;
+    transition: transform 0.15s;
+}
+.roman-skill:hover { transform: scale(1.08); }
+.roman-footer {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    border-top: 0.5px solid #e2e8f0;
+    padding-top: 1rem;
+}
+.roman-btn {
+    display: inline-block;
+    padding: 7px 16px;
+    font-size: 13px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 0.5px solid #6366f1;
+    color: #4f46e5;
+    background: transparent;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+.roman-btn:hover { background: #eef2ff; }
+.roman-btn.primary { background: #4f46e5; color: #fff; border-color: #4f46e5; }
+.roman-btn.primary:hover { background: #4338ca; }
+.roman-msg { font-size: 13px; color: #4f46e5; margin-top: 8px; min-height: 20px; display: none; }

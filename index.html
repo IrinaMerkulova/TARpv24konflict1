@@ -9,28 +9,218 @@
 </head>
 <body>
 
-    <h1>TARpv24 Õpilaste ainemapid</h1>
+<h1>TARpv24 Õpilaste ainemapid</h1>
 
-    <!-- SIIN võivad olla teiste õpilaste osad -->
+<!-- SIIN võivad olla teiste õpilaste osad -->
 
+<section class="illia-section" id="illia">
+    <h2 class="illia-title">Illia ainemapp</h2>
 
+    <p class="illia-text">
+        Tere! Mina olen Illia. See on minu ainemapp, kus näitan oma töid ja arengut.
+    </p>
+
+    <a class="illia-link" href="https://illiablahun24.thkit.ee" target="_blank">
+        Vaata minu lehte
+    </a>
+
+    <br><br>
+
+    <button class="illia-btn" onclick="showMessage()">
+        Vajuta mind
+    </button>
+</section>
+
+<script src="illia.js"></script>
+<link rel="stylesheet" href="illia.css">
+
+<!-- MINU OSA ALGUS -->
+<section class="minu-osa">
+    <h2>Minu ainemapp</h2>
+
+    <p>Minu elu moto!</p>
+
+    <a href="SIIA_SINU_LINK" target="_blank">
+        Vaata minu lehte
+    </a>
+
+    <br><br>
+
+    <button onclick="alert('Tere!')">Vajuta</button>
+</section>
+<!-- MINU OSA LÕPP -->
+<section class="martin-rossakov-box">
+    <h2 id="martin-rossakov-heading">Martin Rossakov Ainemapp</h2>
+
+    <p class="martin-rossakov-desc">
+        Tere! Mina olen Martin Rossakov. See on minu ainemapp, kus näitan oma oskusi ja projekte veebiarenduses.
+    </p>
+
+    <a href="https://martinrossakov24.thkit.ee/index.html" target="_blank" class="martin-rossakov-btn">
+        Vaata portfooliot
+    </a>
+
+    <p class="martin-rossakov-desc">
+        Siin saad vaadata ka kõiki minu tehtud töid, kasutatud linke, infot minu kohta ning WordPress lehte:
+    </p>
+
+    <div class="martin-rossakov-links">
+        <a href="https://martinrossakov24.thkit.ee/teemad_lindig.html" target="_blank" class="martin-rossakov-small-btn">
+            Kõik lingid
+        </a>
+
+        <a href="https://martinrossakov24.thkit.ee/tood.html" target="_blank" class="martin-rossakov-small-btn">
+            Minu tööd
+        </a>
+
+        <a href="https://martinrossakov24.thkit.ee/info.html" target="_blank" class="martin-rossakov-small-btn">
+            Info minu kohta
+        </a>
+
+        <a href="https://martinrossakov24.thkit.ee/wp/" target="_blank" class="martin-rossakov-small-btn">
+            WordPress leht
+        </a>
+    </div>
+
+    <br>
+
+    <button onclick="martinAlert()" class="martin-rossakov-action">
+        Vajuta mind
+    </button>
+
+    <p id="martin-rossakov-text"></p>
+</section>
+
+<script>
+    function martinAlert() {
+        alert("Tere Martinilt! 👋");
+
+        document.getElementById("martin-rossakov-text").innerHTML =
+            "Ava lingid ja vaata minu töid! 🚀";
+    }
+</script>
+
+<!-- NASTJA OSA ALGUS -->
+<section class="nastja-section">
+    <div class="nastja-card">
+        <div class="nastja-header">
+            <div class="nastja-avatar">
+                <img src="images/nastja.png" alt="Anastasiia Radasheva" class="nastja-foto">
+            </div>
+            <div class="nastja-info">
+                <h2 class="nastja-nimi">Anastasiia Radasheva</h2>
+                <p class="nastja-tiitel">TARpv24 · Full-stack õppija</p>
+            </div>
+        </div>
+        <p class="nastja-kirjeldus">
+            Tere! Olen 18-aastane programmeerimishuvilane TTHKst.
+            Minu ainemapist leiad materjale <strong>Python, C#, SQL, Robotika</strong> ja
+            <strong>Veebirakenduste</strong> kohta.
+        </p>
+        <div class="nastja-teemad">
+            <span class="nastja-tag"> Python & OOP</span>
+            <span class="nastja-tag"> C#</span>
+            <span class="nastja-tag">SQL / Andmebaasid</span>
+            <span class="nastja-tag"> Robotika</span>
+            <span class="nastja-tag"> Web</span>
+        </div>
+        <div class="nastja-nupud">
+            <a href="https://anastasiiaradasheva24.thkit.ee/wp/eng/" target="_blank" class="nastja-link-nupp">
+                Vaata minu ainemappi →
+            </a>
+            <button class="nastja-hello-nupp" onclick="nastjaHello()">Üllata mind!</button>
+        </div>
+    </div>
+</section>
+
+<script>
+    function nastjaHello() {
+        const teated = [
+            "Tere!  Vaata minu ainemappi — seal on palju huvitavat!",
+            "Fun fact: SQL on mu lemmik aine! ",
+            "Ma õpin TTHKs TARpv24 rühmas ",
+            "Olen ehitanud rakendusi C#, Python ja Webiga! "
+        ];
+        const juhuslik = teated[Math.floor(Math.random() * teated.length)];
+        alert(juhuslik);
+    }
+</script>
+<!-- NASTJA OSA LÕPP -->
+
+</body>
+</html>
 
     <!-- MINU OSA ALGUS -->
     <section class="minu-osa">
         <h2>Minu ainemapp</h2>
-        
+
         <p>Minu elu moto!</p>
-        
+
         <a href="SIIA_SINU_LINK" target="_blank">
             Vaata minu lehte
         </a>
-        
+
         <br><br>
-        
+
         <button onclick="alert('Tere!')">Vajuta</button>
     </section>
     <!-- MINU OSA LÕPP -->
 
+    <!-- ROMAN ZAITSEV OSA ALGUS -->
+    <section class="roman-section">
+        <div class="roman-header">
+            <div class="roman-avatar-video">
+                <video autoplay loop muted playsinline>
+                    <source src="avatar/roman.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="roman-header-text">
+                <h2>Roman Zaitsev</h2>
+                <p>TARpv24 · Noorem tarkvaraarendaja</p>
+            </div>
+        </div>
+        <div class="roman-body">
+            <p class="roman-bio">
+                Tere! Olen Roman — õpin Tallinna Tööstushariduskeskuses noorem tarkvaraarendaja erialal.
+                Minu ainemapist leiad materjale veebiarenduse, andmebaaside ja programmeerimise kohta.
+            </p>
+            <div class="roman-skills">
+                <span class="roman-skill">HTML / CSS</span>
+                <span class="roman-skill">JavaScript</span>
+                <span class="roman-skill">Python</span>
+                <span class="roman-skill">SQL</span>
+                <span class="roman-skill">C#</span>
+                
+            </div>
+            <div class="roman-footer">
+                <a href="https://romanzaitsev24.thkit.ee/" target="_blank" class="roman-btn primary">Vaata ainemappi</a>
+                <a href="https://github.com/" target="_blank" class="roman-btn">GitHub</a>
+                <button class="roman-btn" onclick="romanHello()">Vajuta mind!</button>
+            </div>
+            <p class="roman-msg" id="roman-msg"></p>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('.roman-skill').forEach(tag => {
+            tag.addEventListener('click', () => {
+                tag.style.transform = 'scale(1.2)';
+                setTimeout(() => tag.style.transform = '', 200);
+            });
+        });
+        function romanHello() {
+            const msgs = [
+                "Mark Jürgen ChatGPT deemon",
+                "Kus on Marek Lukk?!",
+                "Roman Zaitsev — TARpv24",
+                "Illia Console God"
+            ];
+            const el = document.getElementById('roman-msg');
+            el.textContent = msgs[Math.floor(Math.random() * msgs.length)];
+            el.style.display = 'block';
+        }
+    </script>
+    <!-- ROMAN ZAITSEV OSA LÕPP -->
 
 
 </body>
