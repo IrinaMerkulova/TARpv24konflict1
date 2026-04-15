@@ -261,6 +261,51 @@
         }
     </script>
     <!-- ARTJOM OSA LÕPP -->
+<!-- ADRIANA OSA ALGUS -->
+<section class="adriana-section">
+    <div class="adriana-card">
+        <div class="adriana-header">
+            <div class="adriana-avatar">
+                <img src="images/adriana.jpg" alt="Adriana Pikaljov" class="adriana-foto">
+            </div>
+            <div class="adriana-info">
+                <h2 class="adriana-nimi">Adriana Pikaljov</h2>
+                <p class="adriana-tiitel">TARpv24 · õppija</p>
+            </div>
+        </div>
+        <p class="adriana-kirjeldus">
+            Tere! Olen 18-aastane programmeerimishuvilane TTHKst.
+            Minu ainemapist leiad materjale <strong>Python, C#, SQL, Robotika</strong> ja
+            <strong>Veebirakenduste</strong> kohta.
+        </p>
+        <div class="adriana-teemad">
+            <span class="adriana-tag">Python &amp; OOP</span>
+            <span class="adriana-tag">C#</span>
+            <span class="adriana-tag">Andmebaasid</span>
+            <span class="adriana-tag">Robotika</span>
+            <span class="adriana-tag">Veebirakendus</span>
+        </div>
+        <div class="adriana-nupud">
+            <a href="https://adrianapikaljov24.thkit.ee/wp/" target="_blank" class="adriana-link-nupp">
+                Vaata minu ainemappi →
+            </a>
+            <button class="adriana-hello-nupp" onclick="adrianaHello()">Üllata mind!</button>
+        </div>
+    </div>
+</section>
+<script>
+    function adrianaHello() {
+        const teated = [
+            "Tere! Vaata minu ainemappi — seal on palju kasulikke materjale!",
+            "Fun fact: Adriana ja  Nastja kasutavad chatgpt",
+            "Ma õpin TTHKs TARpv24 rühmas",
+
+        ];
+        const juhuslik = teated[Math.floor(Math.random() * teated.length)];
+        alert(juhuslik);
+    }
+</script>
+<!-- ADRIANA OSA LÕPP -->
 
 </body>
 </html>
