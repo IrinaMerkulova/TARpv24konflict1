@@ -1,0 +1,10 @@
+.minu-osa {
+    border: 2px solid green;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.minu-osa h2 {
+    color: green;
+}
