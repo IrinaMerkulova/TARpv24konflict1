@@ -31,7 +31,50 @@
     </section>
     <!-- MINU OSA LÕPP -->
 
+    <section class="nikitan-section">
+        <div class="nikitan-kaart">
+            <div class="nikitan-header">
+                <div class="nikitan-avatar">
+                    <img src="nikitanfoto.jpeg" alt="avatar">
+                </div>
+                <div>
+                    <p class="nikitan-nimi">Nikita Nikiforov</p>
+                    <p class="nikitan-roll">Noorem Tarkvaarendaja · Tallinna Tööstushariduskeskus</p>
+                </div>
+            </div>
 
+            <hr class="nikitan-joon">
+
+            <div class="nikitan-oskused">
+                <span class="nikitan-badge">HTML / CSS</span>
+                <span class="nikitan-badge">JavaScript</span>
+                <span class="nikitan-badge">Git</span>
+                <span class="nikitan-badge">Python</span>
+                <span class="nikitan-badge">UI / UX</span>
+            </div>
+
+            <p class="nikitan-bio">
+                Olen Tallinna Tööstushariduskeskuse õpilane. Õpin nooremprogrammeerijaks ja arvan, et parim viis õppida on praktiseerida ja teenida palju raha.
+            </p>
+
+            <div class="nikitan-stats">
+                <div class="nikitan-stat"><span class="nikitan-stat-arv">2</span><span class="nikitan-stat-silt">õppeaasta</span></div>
+                <div class="nikitan-stat"><span class="nikitan-stat-arv">120+</span><span class="nikitan-stat-silt">Varastas Artem Põldsaarelt töö</span></div>
+                <div class="nikitan-stat"><span class="nikitan-stat-arv">3</span><span class="nikitan-stat-silt">aktiivseid projekte</span></div>
+            </div>
+
+            <button class="nikitan-nupp" onclick="nikitanVotaUhendust()">Võta ühendust</button>
+            <p class="nikitan-teade" id="nikitan-teade"></p>
+        </div>
+    </section>
+
+    <script>
+        function nikitanVotaUhendust() {
+            var el = document.getElementById('nikitan-teade');
+            el.textContent = 'Tere! Sain su sõnumi kätte — vastan esimesel võimalusel.';
+            setTimeout(function() { el.textContent = ''; }, 3000);
+        }
+    </script>
 
 </body>
 </html>
