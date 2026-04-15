@@ -501,5 +501,219 @@
     </script>
     <!-- Nikita Nikiforov OSA LÕPP -->
 
+    <!-- MILAN OSA ALGUS -->
+    <section class="Milan-section">
+        <div class="Milan-card">
+
+            <!-- DotField canvas — фон карточки -->
+            <canvas class="Milan-dotfield" id="milanDotCanvas"></canvas>
+            <!-- SVG glow поверх canvas, под контентом -->
+            <svg class="Milan-dotfield-svg" id="milanDotSvg" aria-hidden="true">
+                <defs>
+                    <radialGradient id="milanGlow">
+                        <stop offset="0%" stop-color="#3a0a0a" />
+                        <stop offset="100%" stop-color="transparent" />
+                    </radialGradient>
+                </defs>
+                <circle id="milanGlowCircle" cx="-9999" cy="-9999" r="160"
+                        fill="url(#milanGlow)" style="opacity:0;" />
+            </svg>
+
+            <!-- Контент карточки -->
+            <div class="Milan-content">
+                <div class="Milan-accent-bar"></div>
+                <h2 class="Milan-title">Milan <span class="Milan-highlight">Petrovski</span></h2>
+                <p class="Milan-tagline">🎨 Veebidisaini entusiast · TARpv24</p>
+                <p class="Milan-bio">
+                    Tere! Olen Milan — loominguline mõtleja, kes ühendab disaini ja koodi.
+                    Minu ainemapp näitab minu teekonda algajast arendajaks.
+                </p>
+                <div class="Milan-skills">
+                    <span class="Milan-tag">HTML</span>
+                    <span class="Milan-tag">CSS</span>
+                    <span class="Milan-tag">JavaScript</span>
+                    <span class="Milan-tag">Git</span>
+                </div>
+                <a class="Milan-btn" href="SIIA_SINU_LINK" target="_blank">
+                    📂 Vaata minu ainemappi
+                </a>
+                <div class="Milan-footer">
+                    <button class="Milan-surprise-btn" onclick="milanSurprise()">🔥 Vajuta mind!</button>
+                    <p class="Milan-msg" id="milanMsg"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        /* ===== Milan JS ===== */
+        const MilanQuotes = [
+            "🚀 Kood on luule, mida arvutid mõistavad!",
+            "💡 Iga viga on uus õppetund.",
+            "🎯 Commit by commit — suureks arendajaks!",
+            "🔥 Programmeerimine = superjõud!"
+        ];
+        let MilanIdx = 0;
+        function MilanSurprise() {
+            const msg = document.getElementById('MilanMsg');
+            msg.textContent = MilanQuotes[MilanIdx % MilanQuotes.length];
+            msg.classList.remove('Milan-msg-pop');
+            void msg.offsetWidth;
+            msg.classList.add('Milan-msg-pop');
+            MilanIdx++;
+        }
+
+        /* ===== MILAN JS ===== */
+        const milanQuotes = [
+            "🎨 Disain on vaikimine, mis räägib!",
+            "💥 Iga piksel on otsus.",
+            "🚀 Kood + loovus = maagia!",
+            "⚡ Veeb on minu lõuend."
+        ];
+        let milanIdx = 0;
+        function milanSurprise() {
+            const msg = document.getElementById('milanMsg');
+            msg.textContent = milanQuotes[milanIdx % milanQuotes.length];
+            msg.classList.remove('Milan-msg-pop');
+            void msg.offsetWidth;
+            msg.classList.add('Milan-msg-pop');
+            milanIdx++;
+        }
+
+        /* ===== MILAN DOTFIELD (vanilla JS port) ===== */
+        (function () {
+            const canvas  = document.getElementById('milanDotCanvas');
+            const glowEl  = document.getElementById('milanGlowCircle');
+            if (!canvas) return;
+
+            const ctx = canvas.getContext('2d', { alpha: true });
+            const dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+            // props
+            const DOT_RADIUS    = 1.5;
+            const DOT_SPACING   = 14;
+            const BULGE_STRENGTH = 60;
+            const CURSOR_RADIUS = 500;
+            const GLOW_RADIUS   = 160;
+            const GRADIENT_FROM = 'rgba(229, 62, 62, 0.30)';
+            const GRADIENT_TO   = 'rgba(120, 60, 60, 0.18)';
+            const TWO_PI        = Math.PI * 2;
+
+            let dots = [];
+            let w = 0, h = 0;
+            let offsetX = 0, offsetY = 0;
+            let frameCount = 0;
+            let rafId;
+            let glowOpacity = 0;
+            let engagement  = 0;
+
+            const mouse = { x: -9999, y: -9999, prevX: -9999, prevY: -9999, speed: 0 };
+
+            function buildDots(W, H) {
+                const step = DOT_RADIUS + DOT_SPACING;
+                const cols = Math.floor(W / step);
+                const rows = Math.floor(H / step);
+                const padX = (W % step) / 2;
+                const padY = (H % step) / 2;
+                dots = [];
+                for (let r = 0; r < rows; r++) {
+                    for (let c = 0; c < cols; c++) {
+                        const ax = padX + c * step + step / 2;
+                        const ay = padY + r * step + step / 2;
+                        dots.push({ ax, ay, sx: ax, sy: ay });
+                    }
+                }
+            }
+
+            function resize() {
+                const rect = canvas.parentElement.getBoundingClientRect();
+                w = rect.width;
+                h = rect.height;
+                canvas.width  = w * dpr;
+                canvas.height = h * dpr;
+                canvas.style.width  = w + 'px';
+                canvas.style.height = h + 'px';
+                ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+                offsetX = rect.left + window.scrollX;
+                offsetY = rect.top  + window.scrollY;
+                buildDots(w, h);
+            }
+
+            function onMouseMove(e) {
+                mouse.x = e.pageX - offsetX;
+                mouse.y = e.pageY - offsetY;
+            }
+
+            // mouse speed tracker
+            setInterval(function () {
+                const dx = mouse.prevX - mouse.x;
+                const dy = mouse.prevY - mouse.y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                mouse.speed += (dist - mouse.speed) * 0.5;
+                if (mouse.speed < 0.001) mouse.speed = 0;
+                mouse.prevX = mouse.x;
+                mouse.prevY = mouse.y;
+            }, 20);
+
+            function tick() {
+                frameCount++;
+                const len = dots.length;
+                const crSq = CURSOR_RADIUS * CURSOR_RADIUS;
+                const rad  = DOT_RADIUS / 2;
+
+                const targetEng = Math.min(mouse.speed / 5, 1);
+                engagement += (targetEng - engagement) * 0.06;
+                if (engagement < 0.001) engagement = 0;
+
+                glowOpacity += (engagement - glowOpacity) * 0.08;
+                glowEl.setAttribute('cx', mouse.x);
+                glowEl.setAttribute('cy', mouse.y);
+                glowEl.style.opacity = glowOpacity;
+
+                ctx.clearRect(0, 0, w, h);
+
+                const grad = ctx.createLinearGradient(0, 0, w, h);
+                grad.addColorStop(0, GRADIENT_FROM);
+                grad.addColorStop(1, GRADIENT_TO);
+                ctx.fillStyle = grad;
+
+                ctx.beginPath();
+                for (let i = 0; i < len; i++) {
+                    const d = dots[i];
+                    const dx = mouse.x - d.ax;
+                    const dy = mouse.y - d.ay;
+                    const distSq = dx * dx + dy * dy;
+
+                    if (distSq < crSq && engagement > 0.01) {
+                        const dist  = Math.sqrt(distSq);
+                        const t     = 1 - dist / CURSOR_RADIUS;
+                        const push  = t * t * BULGE_STRENGTH * engagement;
+                        const angle = Math.atan2(dy, dx);
+                        d.sx += (d.ax - Math.cos(angle) * push - d.sx) * 0.15;
+                        d.sy += (d.ay - Math.sin(angle) * push - d.sy) * 0.15;
+                    } else {
+                        d.sx += (d.ax - d.sx) * 0.1;
+                        d.sy += (d.ay - d.sy) * 0.1;
+                    }
+
+                    ctx.moveTo(d.sx + rad, d.sy);
+                    ctx.arc(d.sx, d.sy, rad, 0, TWO_PI);
+                }
+                ctx.fill();
+
+                rafId = requestAnimationFrame(tick);
+            }
+
+            // init
+            resize();
+            window.addEventListener('resize', function () {
+                cancelAnimationFrame(rafId);
+                setTimeout(function () { resize(); rafId = requestAnimationFrame(tick); }, 100);
+            });
+            window.addEventListener('mousemove', onMouseMove, { passive: true });
+            rafId = requestAnimationFrame(tick);
+        })();
+    </script>
+
 </body>
 </html>
