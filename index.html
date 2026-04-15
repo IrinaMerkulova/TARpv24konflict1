@@ -3,144 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <title>Ainemapid</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- CSS link -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>TARpv24 Õpilaste ainemapid</h1>
+    <h1>TARpv24 Õpilaste ainemapid</h1>
 
-<!-- SIIN võivad olla teiste õpilaste osad -->
+    <!-- SIIN võivad olla teiste õpilaste osad -->
 
+    <section class="illia-section" id="illia">
+        <h2 class="illia-title">Illia ainemapp</h2>
 
-<section class="illia-section" id="illia">
-    <h2 class="illia-title">Illia ainemapp</h2>
-
-    <p class="illia-text">
-        Tere! Mina olen Illia. See on minu ainemapp, kus näitan oma töid ja arengut.
-    </p>
-
-    <a class="illia-link" href="https://illiablahun24.thkit.ee" target="_blank">
-        Vaata minu lehte
-    </a>
-
-    <br><br>
-
-    <button class="illia-btn" id="illia-btn">
-        Vajuta mind
-    </button>
-</section>
-
-
-
-<script src="illia.js"></script>
-<link rel="stylesheet" href="illia.css">
-
-
-    <br><br>
-
-</section>
-<!-- MINU OSA LÕPP -->
-<section class="martin-rossakov-box">
-    <h2 id="martin-rossakov-heading">Martin Rossakov Ainemapp</h2>
-
-    <p class="martin-rossakov-desc">
-        Tere! Mina olen Martin Rossakov. See on minu ainemapp, kus näitan oma oskusi ja projekte veebiarenduses.
-    </p>
-
-    <a href="https://martinrossakov24.thkit.ee/index.html" target="_blank" class="martin-rossakov-btn">
-        Vaata portfooliot
-    </a>
-
-    <p class="martin-rossakov-desc">
-        Siin saad vaadata ka kõiki minu tehtud töid, kasutatud linke, infot minu kohta ning WordPress lehte:
-    </p>
-
-    <div class="martin-rossakov-links">
-        <a href="https://martinrossakov24.thkit.ee/teemad_lindig.html" target="_blank" class="martin-rossakov-small-btn">
-            Kõik lingid
-        </a>
-
-        <a href="https://martinrossakov24.thkit.ee/tood.html" target="_blank" class="martin-rossakov-small-btn">
-            Minu tööd
-        </a>
-
-        <a href="https://martinrossakov24.thkit.ee/info.html" target="_blank" class="martin-rossakov-small-btn">
-            Info minu kohta
-        </a>
-
-        <a href="https://martinrossakov24.thkit.ee/wp/" target="_blank" class="martin-rossakov-small-btn">
-            WordPress leht
-        </a>
-    </div>
-
-    <br>
-
-    <button onclick="martinAlert()" class="martin-rossakov-action">
-        Vajuta mind
-    </button>
-
-    <p id="martin-rossakov-text"></p>
-</section>
-
-<script>
-    function martinAlert() {
-        alert("Tere Martinilt! 👋");
-
-        document.getElementById("martin-rossakov-text").innerHTML =
-            "Ava lingid ja vaata minu töid! 🚀";
-    }
-</script>
-
-<!-- NASTJA OSA ALGUS -->
-<section class="nastja-section">
-    <div class="nastja-card">
-        <div class="nastja-header">
-            <div class="nastja-avatar">
-                <img src="images/nastja.png" alt="Anastasiia Radasheva" class="nastja-foto">
-            </div>
-            <div class="nastja-info">
-                <h2 class="nastja-nimi">Anastasiia Radasheva</h2>
-                <p class="nastja-tiitel">TARpv24 · Full-stack õppija</p>
-            </div>
-        </div>
-        <p class="nastja-kirjeldus">
-            Tere! Olen 18-aastane programmeerimishuvilane TTHKst.
-            Minu ainemapist leiad materjale <strong>Python, C#, SQL, Robotika</strong> ja
-            <strong>Veebirakenduste</strong> kohta.
+        <p class="illia-text">
+            Tere! Mina olen Illia. See on minu ainemapp, kus näitan oma töid ja arengut.
         </p>
-        <div class="nastja-teemad">
-            <span class="nastja-tag"> Python & OOP</span>
-            <span class="nastja-tag"> C#</span>
-            <span class="nastja-tag">SQL / Andmebaasid</span>
-            <span class="nastja-tag"> Robotika</span>
-            <span class="nastja-tag"> Web</span>
-        </div>
-        <div class="nastja-nupud">
-            <a href="https://anastasiiaradasheva24.thkit.ee/wp/eng/" target="_blank" class="nastja-link-nupp">
-                Vaata minu ainemappi →
-            </a>
-            <button class="nastja-hello-nupp" onclick="nastjaHello()">Üllata mind!</button>
-        </div>
-    </div>
-</section>
 
-<script>
-    function nastjaHello() {
-        const teated = [
-            "Tere!  Vaata minu ainemappi — seal on palju huvitavat!",
-            "Fun fact: SQL on mu lemmik aine! ",
-            "Ma õpin TTHKs TARpv24 rühmas ",
-            "Olen ehitanud rakendusi C#, Python ja Webiga! "
-        ];
-        const juhuslik = teated[Math.floor(Math.random() * teated.length)];
-        alert(juhuslik);
-    }
-</script>
-<!-- NASTJA OSA LÕPP -->
+        <a class="illia-link" href="https://illiablahun24.thkit.ee" target="_blank">
+            Vaata minu lehte
+        </a>
 
-<!-- IGOR OSA LÕPP -->
+        <br><br>
+
+        <button class="illia-btn" onclick="showMessage()">
+            Vajuta mind
+        </button>
+    </section>
+
+    <script src="illia.js"></script>
+    <link rel="stylesheet" href="illia.css">
+
+    <!-- MINU OSA ALGUS -->
+    <section class="minu-osa">
+        <h2>Minu ainemapp</h2>
+
+        <p>Minu elu moto!</p>
+
+        <a href="SIIA_SINU_LINK" target="_blank">
+            Vaata minu lehte
+        </a>
+
+        <br><br>
+
+        <button onclick="alert('Tere!')">Vajuta</button>
+    </section>
+    <!-- MINU OSA LÕPP -->
+
+    <!-- IGOR OSA ALGUS -->
     <section class="igor-osa">
         <div class="igor-terminal-header">
             <span class="igor-dot"></span><span class="igor-dot"></span><span class="igor-dot"></span>
@@ -168,22 +81,176 @@
         </div>
     </section>
 
-
     <script>
-        // Dünaamiline element: nupu vajutusel muudetakse stiili ja kuvatakse teade
-        document.getElementById('igor-hack-btn').addEventListener('click', function() {
-            alert('SÜSTEEM ON VALMIS. HELLO FRIEND.');
+        document.getElementById("igor-hack-btn").addEventListener("click", function () {
+            alert("SÜSTEEM ON VALMIS. HELLO FRIEND.");
             this.innerHTML = "LIGIPÄÄS_OLEMAS";
             this.style.borderColor = "#ff0000";
             this.style.color = "#ff0000";
         });
-
     </script>
     <script src="igor/igor-bg.js"></script>
     <!-- IGOR OSA LÕPP -->
 
+    <section class="martin-rossakov-box">
+        <h2 id="martin-rossakov-heading">Martin Rossakov Ainemapp</h2>
 
+        <p class="martin-rossakov-desc">
+            Tere! Mina olen Martin Rossakov. See on minu ainemapp, kus näitan oma oskusi ja projekte veebiarenduses.
+        </p>
 
+        <a href="https://martinrossakov24.thkit.ee/index.html" target="_blank" class="martin-rossakov-btn">
+            Vaata portfooliot
+        </a>
+
+        <p class="martin-rossakov-desc">
+            Siin saad vaadata ka kõiki minu tehtud töid, kasutatud linke, infot minu kohta ning WordPress lehte:
+        </p>
+
+        <div class="martin-rossakov-links">
+            <a href="https://martinrossakov24.thkit.ee/teemad_lindig.html" target="_blank" class="martin-rossakov-small-btn">
+                Kõik lingid
+            </a>
+
+            <a href="https://martinrossakov24.thkit.ee/tood.html" target="_blank" class="martin-rossakov-small-btn">
+                Minu tööd
+            </a>
+
+            <a href="https://martinrossakov24.thkit.ee/info.html" target="_blank" class="martin-rossakov-small-btn">
+                Info minu kohta
+            </a>
+
+            <a href="https://martinrossakov24.thkit.ee/wp/" target="_blank" class="martin-rossakov-small-btn">
+                WordPress leht
+            </a>
+        </div>
+
+        <br>
+
+        <button onclick="martinAlert()" class="martin-rossakov-action">
+            Vajuta mind
+        </button>
+
+        <p id="martin-rossakov-text"></p>
+    </section>
+
+    <script>
+        function martinAlert() {
+            alert("Tere Martinilt! 👋");
+
+            document.getElementById("martin-rossakov-text").innerHTML =
+                "Ava lingid ja vaata minu töid! 🚀";
+        }
+    </script>
+
+    <!-- MAKSIMI OSA ALGUS -->
+    <section class="maksim-section">
+        <div class="maksim-card" id="maksim-card">
+            <div class="maksim-layout">
+                <div class="maksim-visual">
+                    <div class="maksim-avatar-ring">
+                        <div class="maksim-avatar">
+                            <span class="maksim-avatar-text">MT</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="maksim-content">
+                    <p class="maksim-eyebrow">Portfoolio kaart</p>
+                    <h2>Maksim Tsikvasvili</h2>
+                    <p class="maksim-role">Noorem Tarkvaraarendaja</p>
+                    <p class="maksim-text">
+                        Õpin TTHKs nooremaks tarkvaraarendajaks ning arendan samm-sammult oma oskusi veebiarenduse,
+                        programmeerimise ja praktiliste projektide kaudu.
+                    </p>
+                    <div class="maksim-actions">
+                        <a class="maksim-link" href="https://maksimtsikvasvili24.thkit.ee/" target="_blank" rel="noreferrer">
+                            Ava minu veebileht
+                        </a>
+                        <button class="maksim-button" id="maksim-button" type="button" onclick="toggleMaksimCard()">
+                            Näita rohkem
+                        </button>
+                    </div>
+                    <div class="maksim-extra" id="maksim-extra">
+                        <div class="maksim-extra-inner">
+                            <p class="maksim-status" id="maksim-status">
+                                Dünaamiline osa töötab: kaart on avatud, toonid on tugevamad ja kontaktid on rõhutatud.
+                            </p>
+                            <div class="maksim-socials">
+                                <a class="maksim-social" href="https://github.com/maksimts-kool" target="_blank" rel="noreferrer" aria-label="GitHub">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M12 2C6.477 2 2 6.589 2 12.248c0 4.526 2.865 8.365 6.839 9.72.5.094.682-.221.682-.493 0-.243-.009-.888-.014-1.743-2.782.616-3.37-1.37-3.37-1.37-.455-1.177-1.11-1.49-1.11-1.49-.908-.636.069-.624.069-.624 1.004.072 1.532 1.053 1.532 1.053.892 1.564 2.341 1.112 2.91.85.091-.664.349-1.112.635-1.367-2.22-.258-4.555-1.136-4.555-5.056 0-1.117.389-2.031 1.029-2.747-.103-.259-.446-1.3.098-2.71 0 0 .84-.276 2.75 1.05A9.303 9.303 0 0 1 12 6.836a9.27 9.27 0 0 1 2.505.347c1.909-1.326 2.748-1.05 2.748-1.05.546 1.41.203 2.451.1 2.71.64.716 1.027 1.63 1.027 2.747 0 3.93-2.339 4.794-4.566 5.047.359.317.678.942.678 1.899 0 1.371-.012 2.476-.012 2.812 0 .274.18.592.688.492A10.276 10.276 0 0 0 22 12.248C22 6.589 17.523 2 12 2z"/>
+                                    </svg>
+                                </a>
+                                <a class="maksim-social" href="https://t.me/maksimts3" target="_blank" rel="noreferrer" aria-label="Telegram">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M21.944 4.665c.302-1.423-.516-1.98-1.74-1.533L2.84 9.92c-1.186.458-1.17 1.12-.216 1.412l4.454 1.42 10.31-6.62c.487-.32.932-.148.566.183l-8.356 7.63-.326 4.856c.477 0 .688-.223.955-.486l2.293-2.252 4.77 3.63c.879.495 1.507.24 1.726-.84l2.928-13.188z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MAKSIMI OSA LÕPP -->
+
+    <script>
+        function toggleMaksimCard() {
+            const sectionCard = document.getElementById("maksim-card");
+            const actionButton = document.getElementById("maksim-button");
+            const isExpanded = sectionCard.classList.toggle("maksim-card--active");
+
+            actionButton.textContent = isExpanded ? "Peida" : "Näita rohkem";
+        }
+    </script>
+
+    <!-- NASTJA OSA ALGUS -->
+    <section class="nastja-section">
+        <div class="nastja-card">
+            <div class="nastja-header">
+                <div class="nastja-avatar">
+                    <img src="images/nastja.png" alt="Anastasiia Radasheva" class="nastja-foto">
+                </div>
+                <div class="nastja-info">
+                    <h2 class="nastja-nimi">Anastasiia Radasheva</h2>
+                    <p class="nastja-tiitel">TARpv24 · Full-stack õppija</p>
+                </div>
+            </div>
+            <p class="nastja-kirjeldus">
+                Tere! Olen 18-aastane programmeerimishuvilane TTHKst.
+                Minu ainemapist leiad materjale <strong>Python, C#, SQL, Robotika</strong> ja
+                <strong>Veebirakenduste</strong> kohta.
+            </p>
+            <div class="nastja-teemad">
+                <span class="nastja-tag"> Python & OOP</span>
+                <span class="nastja-tag"> C#</span>
+                <span class="nastja-tag">SQL / Andmebaasid</span>
+                <span class="nastja-tag"> Robotika</span>
+                <span class="nastja-tag"> Web</span>
+            </div>
+            <div class="nastja-nupud">
+                <a href="https://anastasiiaradasheva24.thkit.ee/wp/eng/" target="_blank" class="nastja-link-nupp">
+                    Vaata minu ainemappi →
+                </a>
+                <button class="nastja-hello-nupp" onclick="nastjaHello()">Üllata mind!</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function nastjaHello() {
+            const teated = [
+                "Tere!  Vaata minu ainemappi — seal on palju huvitavat!",
+                "Fun fact: SQL on mu lemmik aine! ",
+                "Ma õpin TTHKs TARpv24 rühmas ",
+                "Olen ehitanud rakendusi C#, Python ja Webiga! "
+            ];
+            const juhuslik = teated[Math.floor(Math.random() * teated.length)];
+            alert(juhuslik);
+        }
+    </script>
+    <!-- NASTJA OSA LÕPP -->
 
 </body>
 </html>
