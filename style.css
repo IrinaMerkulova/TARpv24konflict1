@@ -475,6 +475,128 @@
 }
 /* ---------IGOR LÕPP-------------------*/
 
+/* ======= OLEKSANDRA RYSHNIAK ======= */
+.oleksa-section {
+    border: 2px solid #c4956a;
+    border-radius: 14px;
+    overflow: hidden;
+    max-width: 600px;
+    margin: 2rem 20px;
+    box-shadow: 0 0 0 2px #c4956a;
+}
+.oleksa-top {
+    background: #e8d5b7;
+    padding: 2rem 2rem 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    border-bottom: 2px solid #d4bc9a;
+}
+.oleksa-initials {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: #c4956a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+    flex-shrink: 0;
+    border: 3px solid #fff;
+}
+.oleksa-section .oleksa-name {
+    margin: 0 0 4px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #3a2a1a;
+}
+.oleksa-section .oleksa-role {
+    margin: 0;
+    font-size: 19px;
+    color: #7a5c3a;
+    letter-spacing: 0.4px;
+}
+.oleksa-body {
+    background: #fff;
+    padding: 1.5rem 2rem;
+}
+.oleksa-section .oleksa-bio {
+    font-size: 16px;
+    line-height: 1.75;
+    color: #555;
+    margin: 0 0 1.4rem;
+}
+.oleksa-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+    margin-bottom: 1.5rem;
+}
+.oleksa-section .oleksa-skill {
+    background: #faf8f5;
+    border: 1px solid #e8ddd0;
+    border-radius: 8px;
+    padding: 12px 14px;
+    transition: border-color 0.2s, background 0.2s;
+    cursor: default;
+}
+.oleksa-section .oleksa-skill:hover {
+    border-color: #c4956a;
+    background: #fdf5ec;
+}
+.oleksa-section .oleksa-skill-name {
+    font-size: 19px;
+    font-weight: 600;
+    color: #3a2a1a;
+    margin: 0 0 4px;
+}
+.oleksa-section .oleksa-skill-sub {
+    font-size: 15px;
+    color: #9a8070;
+    margin: 0;
+}
+.oleksa-section .oleksa-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #e8ddd0;
+    padding-top: 1rem;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.oleksa-section .oleksa-contact {
+    font-size: 17px;
+    color: #9a8070;
+}
+.oleksa-section .oleksa-btn {
+    display: inline-block;
+    background: #c4956a;
+    color: #fff;
+    border-color: white;
+    border-radius: 8px;
+    padding: 10px 22px;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.15s;
+}
+.oleksa-section .oleksa-btn:hover {
+    background: #a87848;
+    transform: translateY(-1px);
+}
+.oleksa-section .oleksa-btn:active {
+    transform: scale(0.97);
+}
+.oleksa-avatar {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+/* ======= OLEKSANDRA RYSHNIAK LÕPP ======= */
 
 /* ARTJOM OSA ALGUS */
 .artjom-section {

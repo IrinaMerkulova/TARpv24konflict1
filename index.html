@@ -21,55 +21,25 @@
         Tere! Mina olen Illia. See on minu ainemapp, kus näitan oma töid ja arengut.
     </p>
 
-    <section class="illia-section" id="illia">
-        <h2 class="illia-title">Illia ainemapp</h2>
-
-        <p class="illia-text">
-            Tere! Mina olen Illia. See on minu ainemapp, kus näitan oma töid ja arengut.
-        </p>
-
-        <a class="illia-link" href="https://illiablahun24.thkit.ee" target="_blank">
-            Vaata minu lehte
-        </a>
-
-        <br><br>
-
-        <button class="illia-btn" onclick="showMessage()">
-            Vajuta mind
-        </button>
-    </section>
-
-    <script src="illia.js"></script>
-    <link rel="stylesheet" href="illia.css">
-
-
     <a class="illia-link" href="https://illiablahun24.thkit.ee" target="_blank">
         Vaata minu lehte
     </a>
 
     <br><br>
 
-    <button class="illia-btn" onclick="showMessage()">
+    <button class="illia-btn" id="illia-btn">
         Vajuta mind
     </button>
 </section>
 
+
+
 <script src="illia.js"></script>
 <link rel="stylesheet" href="illia.css">
 
-<!-- MINU OSA ALGUS -->
-<section class="minu-osa">
-    <h2>Minu ainemapp</h2>
-
-    <p>Minu elu moto!</p>
-
-    <a href="SIIA_SINU_LINK" target="_blank">
-        Vaata minu lehte
-    </a>
 
     <br><br>
 
-    <button onclick="alert('Tere!')">Vajuta</button>
 </section>
 <!-- MINU OSA LÕPP -->
 <section class="martin-rossakov-box">
@@ -212,105 +182,71 @@
     <script src="igor/igor-bg.js"></script>
     <!-- IGOR OSA LÕPP -->
 
-    <!-- MINU OSA LÕPP -->
-    <section class="martin-rossakov-box">
-        <h2 id="martin-rossakov-heading">Martin Rossakov Ainemapp</h2>
 
-
-        <p class="martin-rossakov-desc">
-            Tere! Mina olen Martin Rossakov. See on minu ainemapp, kus näitan oma oskusi ja projekte veebiarenduses.
+<!-- OLEKSANDRA RYSHNIAK -->
+<section class="oleksa-section">
+    <div class="oleksa-top">
+        <img src="images/pilt_oleksa.jpg" alt="Oleksandra" class="oleksa-avatar">
+        <div>
+            <h2 class="oleksa-name">Oleksandra Ryshniak</h2>
+            <p class="oleksa-role">TARpv24 · Noorem Tarkvaraarendaja</p>
+        </div>
+    </div>
+    <div class="oleksa-body">
+        <p class="oleksa-bio">
+            Tere! Õpin TTHK-s noorem tarkvaraarendaja erialal ning tegelen programmeerimise,
+            robootika ja veebirakendustega. Minu portfoolios leiate projekte sellistes
+            valdkondades nagu Python, C#, SQL, JavaScript ja Arduino.
         </p>
-
-        <a href="https://martinrossakov24.thkit.ee/index.html" target="_blank" class="martin-rossakov-btn">
-            Vaata portfooliot
-        </a>
-
-        <p class="martin-rossakov-desc">
-            Siin saad vaadata ka kõiki minu tehtud töid, kasutatud linke, infot minu kohta ning WordPress lehte:
-        </p>
-
-        <div class="martin-rossakov-links">
-            <a href="https://martinrossakov24.thkit.ee/teemad_lindig.html" target="_blank" class="martin-rossakov-small-btn">
-                Kõik lingid
-            </a>
-
-            <a href="https://martinrossakov24.thkit.ee/tood.html" target="_blank" class="martin-rossakov-small-btn">
-                Minu tööd
-            </a>
-
-            <a href="https://martinrossakov24.thkit.ee/info.html" target="_blank" class="martin-rossakov-small-btn">
-                Info minu kohta
-            </a>
-
-            <a href="https://martinrossakov24.thkit.ee/wp/" target="_blank" class="martin-rossakov-small-btn">
-                WordPress leht
-            </a>
+        <div class="oleksa-grid">
+            <div class="oleksa-skill">
+                <p class="oleksa-skill-name">Python</p>
+                <p class="oleksa-skill-sub">OOP, graafikud</p>
+            </div>
+            <div class="oleksa-skill">
+                <p class="oleksa-skill-name">SQL / MongoDB</p>
+                <p class="oleksa-skill-sub">Andmebaasid, päringud</p>
+            </div>
+            <div class="oleksa-skill">
+                <p class="oleksa-skill-name">JavaScript</p>
+                <p class="oleksa-skill-sub">React, funktsioonid</p>
+            </div>
+            <div class="oleksa-skill">
+                <p class="oleksa-skill-name">Robootika</p>
+                <p class="oleksa-skill-sub">Arduino, andurid</p>
+            </div>
+            <div class="oleksa-skill">
+                <p class="oleksa-skill-name">C#</p>
+                <p class="oleksa-skill-sub">OOP, rakendused</p>
+            </div>
+            <div class="oleksa-skill">
+                <p class="oleksa-skill-name">HTML / CSS</p>
+                <p class="oleksa-skill-sub">Veebidisain, WordPress</p>
+            </div>
         </div>
 
-        <br>
-
-        <button onclick="martinAlert()" class="martin-rossakov-action">
-            Vajuta mind
-        </button>
-
-        <p id="martin-rossakov-text"></p>
-    </section>
-
-    <script>
-        function martinAlert() {
-            alert("Tere Martinilt! 👋");
-
-            document.getElementById("martin-rossakov-text").innerHTML =
-                "Ava lingid ja vaata minu töid! 🚀";
-        }
-    </script>
-
-    <!-- NASTJA OSA ALGUS -->
-    <section class="nastja-section">
-        <div class="nastja-card">
-            <div class="nastja-header">
-                <div class="nastja-avatar">
-                    <img src="images/nastja.png" alt="Anastasiia Radasheva" class="nastja-foto">
-                </div>
-                <div class="nastja-info">
-                    <h2 class="nastja-nimi">Anastasiia Radasheva</h2>
-                    <p class="nastja-tiitel">TARpv24 · Full-stack õppija</p>
-                </div>
-            </div>
-            <p class="nastja-kirjeldus">
-                Tere! Olen 18-aastane programmeerimishuvilane TTHKst.
-                Minu ainemapist leiad materjale <strong>Python, C#, SQL, Robotika</strong> ja
-                <strong>Veebirakenduste</strong> kohta.
-            </p>
-            <div class="nastja-teemad">
-                <span class="nastja-tag"> Python & OOP</span>
-                <span class="nastja-tag"> C#</span>
-                <span class="nastja-tag">SQL / Andmebaasid</span>
-                <span class="nastja-tag"> Robotika</span>
-                <span class="nastja-tag"> Web</span>
-            </div>
-            <div class="nastja-nupud">
-                <a href="https://anastasiiaradasheva24.thkit.ee/wp/eng/" target="_blank" class="nastja-link-nupp">
-                    Vaata minu ainemappi →
-                </a>
-                <button class="nastja-hello-nupp" onclick="nastjaHello()">Üllata mind!</button>
-            </div>
+        <div class="oleksa-footer">
+            <button class="oleksa-btn" id="oleksa-contact-btn">
+                Võta ühendust
+            </button>
+            <a class="oleksa-btn"
+               href="https://oleksandraryshniak24.thkit.ee/wp1/"
+               target="_blank">Vaata portfooliot</a>
         </div>
-    </section>
 
-    <script>
-        function nastjaHello() {
-            const teated = [
-                "Tere!  Vaata minu ainemappi — seal on palju huvitavat!",
-                "Fun fact: SQL on mu lemmik aine! ",
-                "Ma õpin TTHKs TARpv24 rühmas ",
-                "Olen ehitanud rakendusi C#, Python ja Webiga! "
-            ];
-            const juhuslik = teated[Math.floor(Math.random() * teated.length)];
-            alert(juhuslik);
-        }
-    </script>
-    <!-- NASTJA OSA LÕPP -->
+        <script>
+            document.getElementById('oleksa-contact-btn')
+                .addEventListener('click', function() {
+                    alert('Kirjuta mulle: oleksandraryshniak@gmail.com');
+                });
+        </script>
+    </div>
+</section>
+<!-- OLEKSANDRA RYSHNIAK LÕPP -->
+
+</body>
+</html>
+
 
     <!-- ARTJOM OSA ALGUS -->
     <section class="artjom-section">
