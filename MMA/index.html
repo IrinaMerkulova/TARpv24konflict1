@@ -4,7 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MMA Programmi Galerii</title>
+  <title>MMA tiimi leht</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -16,77 +19,110 @@
     </header>
 
     <main class="card-gallery">
-      <article class="program-card amber-card" id="kaart-1">
+      <article class="program-card amber-card drawio-card" id="kaart-1" data-card="1">
         <div class="card-header">
-          <p class="card-label">Kaart 01</p>
-          <h2>Programmi nimi</h2>
-          <p class="card-subtitle">Asenda see pealkiri enda valitud programmiga.</p>
+          <p class="card-label">Maksim Kaart</p>
+          <h2>draw.io <span>(diagrams.net)</span></h2>
+          <p class="card-subtitle">Tasuta diagrammide loomise tööriist, millega saab teha skeeme, voodiagramme,
+            mõistekaarte ja tehnilisi jooniseid nii veebis kui ka töölauaäpina.</p>
         </div>
 
-        <div class="program-logo" aria-label="Programmi logo koht">
-          <span>Lisa siia programmi logo</span>
+        <div class="program-logo drawio-logo-wrap" aria-label="draw.io logo">
+          <img class="zoomable-image" src="./images/drawiologo_maksim.svg" alt="draw.io logo">
         </div>
 
         <section class="card-section">
           <h3>Lühike ajalugu</h3>
           <ul class="detail-list">
-            <li><strong>Kes lõi:</strong> Kirjuta siia looja või ettevõtte nimi.</li>
-            <li><strong>Millal arendus algas:</strong> Lisa algusaasta või täpsem kuupäev.</li>
-            <li><strong>Miks see loodi:</strong> Selgita lühidalt programmi eesmärki.</li>
-            <li><strong>Kas arendus jätkub:</strong> Märgi, kas programm on endiselt aktiivne.</li>
+            <li><strong>Kes lõi:</strong> JGraphi meeskond, tänaste nimedega draw.io Ltd ja draw.io AG.</li>
+            <li><strong>Millal arendus algas:</strong> draw.io veebileht toob välja, et rakendus avab faile juba aastast
+              2005.</li>
+            <li><strong>Miks see loodi:</strong> eesmärk oli pakkuda tasuta ja lihtsalt kasutatavat diagrammitööriista,
+              kus kasutaja saab oma failid ise hallata.</li>
+            <li><strong>Kas arendus jätkub:</strong> jah, rakendust ja selle GitHubi väljalaskeid uuendatakse endiselt
+              aktiivselt.</li>
           </ul>
         </section>
 
         <section class="card-section">
           <h3>Peamised funktsioonid</h3>
           <p class="section-text">
-            Kirjelda siin programmi peamisi võimalusi, kasutusala ja seda, mis teeb selle teistest
-            sarnastest lahendustest erinevaks.
+            draw.io sobib protsessiskeemide, UML-diagrammide, andmebaasimudelite, kasutajateekondade ja mõistekaartide
+            tegemiseks. Tugevuseks on suur kujundite kogu, mallid, eksport erinevatesse formaatidesse ning see, et faile
+            saab hoida näiteks Google Drive'is, OneDrive'is, GitHubis või oma arvutis.
           </p>
 
+          <ul class="feature-pills" aria-label="draw.io peamised tugevused">
+            <li>Tasuta ja veebipõhine</li>
+            <li>Mallid ja kujundite kogud</li>
+            <li>Eksport PNG, PDF ja SVG</li>
+            <li>Töötab ka offline-versioonina</li>
+          </ul>
+
           <div class="screenshot-grid" aria-label="Ekraanipiltide ala">
-            <figure class="screenshot-slot">Screenshot 1</figure>
-            <figure class="screenshot-slot">Screenshot 2</figure>
+            <figure class="screenshot-slot screenshot-card">
+              <img class="zoomable-image" src="./images/drawiolook1_maksim.png"
+                alt="draw.io tööala koos avatud diagrammiga">
+              <figcaption>Peamine töövaade, kus saab objekte paigutada, ühendada ja kujundada.</figcaption>
+            </figure>
+            <figure class="screenshot-slot screenshot-card">
+              <img class="zoomable-image" src="./images/drawiolook2_maksim.png"
+                alt="draw.io mallide valik ja kategooriad">
+              <figcaption>Mallide vaade aitab alustada valmis struktuuride ja näidistega.</figcaption>
+            </figure>
           </div>
         </section>
       </article>
 
-      <article class="program-card teal-card" id="kaart-2">
+      <article class="program-card teal-card" id="kaart-2" data-card="2">
         <div class="card-header">
-          <p class="card-label">Kaart 02</p>
-          <h2>Programmi nimi</h2>
-          <p class="card-subtitle">Selle kaardi sisu saab hiljem üks tiimiliige üle kirjutada.</p>
+          <p class="card-label">Adriana Kaart</p>
+          <h2>Lucidchart</h2>
+          <p class="card-subtitle">Visuaalne koostöötarkvara diagrammide, vooskeemide ja UML-skeemide loomiseks otse brauseris.</p>
         </div>
 
-        <div class="program-logo" aria-label="Programmi logo koht">
-          <span>Lisa siia programmi logo</span>
+        <div class="program-logo" aria-label="Lucidchart logo">
+          <img class="zoomable-image" src="images/lucidchart.png" alt="Lucidchart logo" style="width:140px; height:auto; display:block;">
         </div>
 
         <section class="card-section">
           <h3>Lühike ajalugu</h3>
           <ul class="detail-list">
-            <li><strong>Kes lõi:</strong> Kirjuta siia looja või ettevõtte nimi.</li>
-            <li><strong>Millal arendus algas:</strong> Lisa algusaasta või täpsem kuupäev.</li>
-            <li><strong>Miks see loodi:</strong> Selgita lühidalt programmi eesmärki.</li>
-            <li><strong>Kas arendus jätkub:</strong> Märgi, kas programm on endiselt aktiivne.</li>
+            <li><strong>Kes lõi:</strong> Karl Sun ja Ben Dilts asutasid Lucid Software Inc.</li>
+            <li><strong>Millal arendus algas:</strong> 2010. aastal Utah's, USAs.</li>
+            <li><strong>Miks see loodi:</strong> Vajadus lihtsa ja veebipõhise alternatiivi järele Microsoft Visio'le — ilma installimiseta.</li>
+            <li><strong>Kas arendus jätkub:</strong> Jah, aktiivselt arendatav; 2022. aastal hinnati ettevõtet üle 3 miljardi dollari.</li>
           </ul>
         </section>
 
         <section class="card-section">
           <h3>Peamised funktsioonid</h3>
           <p class="section-text">
-            Lisa siia lühike kirjeldus programmi kõige olulisematest tööriistadest, tugevustest ja
-            praktilisest kasutamisest.
+            Lucidchart võimaldab luua vooskeeme, UML-diagramme, mõistekaarte, andmebaasiskeeme ja org-graafikuid.
+            Reaalajas koostöö, Google Workspace'i integratsioon ja suur mallide kogu teevad sellest ühe populaarseima CASE-vahendi meeskondade seas.
           </p>
 
-          <div class="screenshot-grid" aria-label="Ekraanipiltide ala">
-            <figure class="screenshot-slot">Screenshot 1</figure>
-            <figure class="screenshot-slot">Screenshot 2</figure>
+          <ul class="feature-pills" aria-label="Lucidchart peamised tugevused">
+            <li>Veebipõhine ja pilves</li>
+            <li>Reaalajas koostöö</li>
+            <li>Eksport PDF, PNG, SVG</li>
+            <li>Google Workspace integratsioon</li>
+          </ul>
+
+          <div class="screenshot-grid" aria-label="Ekraanipiltide ala" style="grid-template-columns: 1fr; gap: 16px;">
+            <figure class="screenshot-slot screenshot-card">
+              <img class="zoomable-image" src="images/skeem.png" alt="Lucidchart vooskeem">
+              <figcaption>Lucidcharti tööala diagrammi koostamisel.</figcaption>
+            </figure>
+            <figure class="screenshot-slot screenshot-card">
+              <img class="zoomable-image" src="images/export.png" alt="Lucidchart eksport ja jagamine">
+              <figcaption>Ekspordi menüü — PDF, PNG, SVG ja muud formaadid.</figcaption>
+            </figure>
           </div>
         </section>
       </article>
 <!-- Mariia Section-->
-      <article class="program-card coral-card" id="kaart-3">
+      <article class="program-card coral-card" id="kaart-3" data-card="3">
         <section id="mariia-section">
           <div class="m-glow-bl"></div>
           <div class="m-wrap">
@@ -178,6 +214,48 @@
       </article>
     </main>
   </div>
+
+  <div class="image-lightbox" id="image-lightbox" hidden>
+    <button class="lightbox-close" type="button" aria-label="Sulge suur pilt">&times;</button>
+    <img class="lightbox-image" src="" alt="">
+  </div>
+
+  <script>
+    const lightbox = document.getElementById('image-lightbox');
+    const lightboxImage = lightbox.querySelector('.lightbox-image');
+    const closeButton = lightbox.querySelector('.lightbox-close');
+    const zoomableImages = document.querySelectorAll('.zoomable-image');
+
+    const closeLightbox = () => {
+      lightbox.hidden = true;
+      lightboxImage.src = '';
+      lightboxImage.alt = '';
+      document.body.classList.remove('lightbox-open');
+    };
+
+    zoomableImages.forEach((image) => {
+      image.addEventListener('click', () => {
+        lightboxImage.src = image.currentSrc || image.src;
+        lightboxImage.alt = image.alt;
+        lightbox.hidden = false;
+        document.body.classList.add('lightbox-open');
+      });
+    });
+
+    closeButton.addEventListener('click', closeLightbox);
+
+    lightbox.addEventListener('click', (event) => {
+      if (event.target === lightbox) {
+        closeLightbox();
+      }
+    });
+
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && !lightbox.hidden) {
+        closeLightbox();
+      }
+    });
+  </script>
 </body>
 
 </html>
