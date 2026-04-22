@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CASE-tööriistad — meeskonna projekt</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="page-header">
+    <div class="page-header__inner">
+      <span class="page-header__label">Meeskonna projekt · 2026</span>
+      <h1 class="page-header__title">CASE-tööriistad<br/>tarkvaraarenduses</h1>
+      <p class="page-header__sub">Ülevaade kolmest arvutipõhise projekteerimise võtmetööriistast</p>
+      <div class="page-header__members">
+        <span>Milan</span>
+        <span>Osaleja 2</span>
+        <span>Osaleja 3</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ───────────────── SEKTSION 1 — MILAN (täielik) ───────────────── -->
+  <section class="milan-section">
+    <div class="milan-section__container">
+
+      <div class="milan-section__badge">Sektsioon I · Milan</div>
+
+      <div class="milan-section__hero">
+        <div class="milan-section__title-block">
+          <h2 class="milan-section__tool-name">Enterprise Architect</h2>
+          <p class="milan-section__tagline">Professionaalne CASE-platvorm modelleerimiseks</p>
+        </div>
+        <div class="milan-section__logo-wrap">
+          <img
+            class="milan-section__logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Sparxsystems_enterprise_architect_logo.png/220px-Sparxsystems_enterprise_architect_logo.png"
+            alt="Enterprise Architect logo"
+            onerror="this.style.display='none'"
+          />
+        </div>
+      </div>
+
+      <div class="milan-section__grid">
+
+        <div class="milan-section__card">
+          <div class="milan-section__card-icon">📖</div>
+          <h3 class="milan-section__card-title">Ajalugu</h3>
+          <ul class="milan-section__history-list">
+            <li><strong>Looja:</strong> Sparx Systems (Austraalia)</li>
+            <li><strong>Arenduse algus:</strong> 1998. aasta</li>
+            <li><strong>Eesmärk:</strong> Luua taskukohane, kuid võimas UML-modelleerimise tööriist ettevõtete tasemel — alternatiiv kallitele Rational Rose lahendustele</li>
+            <li><strong>Areng:</strong> Arendatakse aktiivselt; viimased versioonid (16.x) sisaldavad ArchiMate, BPMN, SysML tuge ja pilvefunktsioone</li>
+          </ul>
+        </div>
+
+        <div class="milan-section__card">
+          <div class="milan-section__card-icon">⚙️</div>
+          <h3 class="milan-section__card-title">Põhifunktsioonid</h3>
+          <ul class="milan-section__features-list">
+            <li>Täielik UML 2.x tugi (15 diagrammitüüpi)</li>
+            <li>Äriprotsesside modelleerimine (BPMN 2.0)</li>
+            <li>Koodi genereerimine (Java, C#, C++, Python)</li>
+            <li>Lähtekoodi pöördprojekteerimine</li>
+            <li>Nõuete haldus ja jälgitavus</li>
+            <li>Meeskonnatöö ühise repositooriumi kaudu</li>
+            <li>Eksport XMI, HTML, PDF, Word formaatidesse</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="milan-section__screenshots">
+        <figure class="milan-section__figure">
+          <img
+            class="milan-section__screenshot"
+            src="umldiag.jpg"
+            alt="Enterprise Architect — klassidiagramm"
+            onerror="this.src='https://placehold.co/600x360/1a1a2e/818cf8?text=EA+Class+Diagram'"
+          />
+          <figcaption class="milan-section__caption">UML klassidiagramm</figcaption>
+        </figure>
+        <figure class="milan-section__figure">
+          <img
+            class="milan-section__screenshot"
+            src="EABPMN.JPG"
+            alt="Enterprise Architect — BPMN"
+            onerror="this.src='https://placehold.co/600x360/1a1a2e/818cf8?text=EA+BPMN+Diagram'"
+          />
+          <figcaption class="milan-section__caption">BPMN protsessidiagramm</figcaption>
+        </figure>
+      </div>
+
+    </div>
+
+    <div class="milan-lightbox" id="milanLightbox">
+      <span class="milan-lightbox__close">&times;</span>
+      <img class="milan-lightbox__img" id="milanLightboxImg" />
+    </div>
+  </section>
+
+  <script>
+    const images = document.querySelectorAll('.milan-section__screenshot');
+    const lightbox = document.getElementById('milanLightbox');
+    const lightboxImg = document.getElementById('milanLightboxImg');
+    const closeBtn = document.querySelector('.milan-lightbox__close');
+
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = img.src;
+      });
+    });
+
+    closeBtn.onclick = () => lightbox.style.display = 'none';
+    lightbox.onclick = () => lightbox.style.display = 'none';
+  </script>
+
+  <!-- ───────────────── SEKTSIOON 2 — OSALEJA 2 (tühikoht) ───────────────── -->
+  <section class="user2-section">
+    <div class="user2-section__container">
+      <div class="user2-section__badge">Sektsioon II · Osaleja 2</div>
+      <div class="user2-section__stub">
+        <div class="user2-section__stub-icon">🚧</div>
+        <h2 class="user2-section__stub-title">Osaleja 2 koht</h2>
+        <p class="user2-section__stub-text">
+          Siia tuleb täielik ülevaade CASE-tööriistast.<br/>
+          Täida Milani sektsiooni eeskujul.
+        </p>
+        <div class="user2-section__stub-slots">
+          <div class="user2-section__stub-slot">🏷 Tööriista nimi</div>
+          <div class="user2-section__stub-slot">🖼 Logo</div>
+          <div class="user2-section__stub-slot">📖 Loomise ajalugu</div>
+          <div class="user2-section__stub-slot">⚙️ Põhifunktsioonid</div>
+          <div class="user2-section__stub-slot">🖥 Ekraanipildid (1–2 tk)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───────────────── SEKTSIOON 3 — OSALEJA 3 (tühikoht) ───────────────── -->
+  <section class="user3-section">
+    <div class="user3-section__container">
+      <div class="user3-section__badge">Sektsioon III · Osaleja 3</div>
+      <div class="user3-section__stub">
+        <div class="user3-section__stub-icon">🚧</div>
+        <h2 class="user3-section__stub-title">Osaleja 3 koht</h2>
+        <p class="user3-section__stub-text">
+          Siia tuleb täielik ülevaade CASE-tööriistast.<br/>
+          Täida Milani sektsiooni eeskujul.
+        </p>
+        <div class="user3-section__stub-slots">
+          <div class="user3-section__stub-slot">🏷 Tööriista nimi</div>
+          <div class="user3-section__stub-slot">🖼 Logo</div>
+          <div class="user3-section__stub-slot">📖 Loomise ajalugu</div>
+          <div class="user3-section__stub-slot">⚙️ Põhifunktsioonid</div>
+          <div class="user3-section__stub-slot">🖥 Ekraanipildid (1–2 tk)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="page-footer">
+    <p class="page-footer__text">Meeskonna projekt · 2026 · CASE-tööriistad</p>
+  </footer>
+
+</body>
+</html>
