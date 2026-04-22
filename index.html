@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Ainemapid</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <!-- CSS link -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="illia.css">
 </head>
 <body>
 
@@ -13,23 +17,233 @@
 
     <!-- SIIN võivad olla teiste õpilaste osad -->
 
+    <section class="illia-section" id="illia">
+        <h2 class="illia-title">Illia ainemapp</h2>
+        <p class="illia-text">
+            Tere! Mina olen Illia. See on minu ainemapp, kus näitan oma töid ja arengut.
+        </p>
+        <a class="illia-link" href="https://illiablahun24.thkit.ee" target="_blank">
+            Vaata minu lehte
+        </a>
+        <br><br>
+        <button class="illia-btn" onclick="showMessage()">
+            Vajuta mind
+        </button>
+    </section>
 
+    <!-- NIKITA LITVINENKO OSA ALGUS -->
+    <section id="nikita-litvinenko-section" class="nikita-litvinenko-profile-card">
+        <div class="nikita-litvinenko-card-content">
+            <div class="nikita-litvinenko-avatar-title-container">
+                <div class="nikita-litvinenko-avatar-container">
+                    <div class="nikita-litvinenko-avatar-glow"></div>
+                    <img src="https://avatars.githubusercontent.com/u/195296126?v=4" alt="Nikita Litvinenko"
+                        class="nikita-litvinenko-avatar">
+                </div>
+                <h2 class="nikita-litvinenko-title">Nikita Litvinenko</h2>
+            </div>
+            <p id="nikita-litvinenko-greeting" class="nikita-litvinenko-description"
+                style="font-weight: 600; color: #ffffff; margin-top: 0;"></p>
+
+            <p class="nikita-litvinenko-description">Hei! Ma õpin Tallinna Tööstushariduskeskuses
+                noorem tarkvaraarendajaks. Siin on minu olulised lingid, kus on kõik
+                minu projektid ja õppematerjalid.</p>
+
+            <p class="nikita-litvinenko-description">Minu oskused:</p>
+
+            <div class="nikita-litvinenko-skills-grid">
+                <div class="nikita-litvinenko-skill-tag">HTML/CSS</div>
+                <div class="nikita-litvinenko-skill-tag">JavaScript</div>
+                <div class="nikita-litvinenko-skill-tag">C#</div>
+                <div class="nikita-litvinenko-skill-tag">C++</div>
+                <div class="nikita-litvinenko-skill-tag">Python</div>
+                <div class="nikita-litvinenko-skill-tag">SQL</div>
+                <div class="nikita-litvinenko-skill-tag">React</div>
+            </div>
+
+            <p class="nikita-litvinenko-description">Minu lingid:</p>
+            <div class="nikita-litvinenko-links">
+                <a href="https://nikitalitvinenko24.thkit.ee/" class="nikita-litvinenko-link-btn"
+                    target="_blank">Veebileht</a>
+                <a href="https://nikitalitvinenko24.thkit.ee/wp" class="nikita-litvinenko-link-btn"
+                    target="_blank">Wordpress</a>
+                <a href="https://github.com/nikita-lit" class="nikita-litvinenko-link-btn" target="_blank">GitHub</a>
+            </div>
+        </div>
+    </section>
+    <script>
+        const greetingElement = document.getElementById('nikita-litvinenko-greeting');
+        const hour = new Date().getHours();
+        let greeting = "Tere!";
+
+        if (hour >= 5 && hour < 12)
+            greeting = "Tere hommikust! 🌅";
+        else if (hour >= 12 && hour < 18)
+            greeting = "Tere päevast! ☀️";
+        else if (hour >= 18 && hour < 22)
+            greeting = "Tere õhtust! 🌙";
+        else
+            greeting = "Head ööd! ✨";
+
+        let i = 0;
+        function typeWriter()
+        {
+            if (i < greeting.length)
+            {
+                greetingElement.textContent += greeting.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100);
+            }
+        }
+        greetingElement.textContent = "";
+        typeWriter();
+
+        const skillTags = document.querySelectorAll('.nikita-litvinenko-skill-tag');
+        skillTags.forEach(tag => {
+            tag.addEventListener('click', () => {
+
+                tag.style.transform = 'scale(1.1)';
+                tag.style.backgroundColor = '#10b981';
+                tag.style.color = '#ffffff';
+
+                setTimeout(() => {
+                    alert(`Oled valinud oskuse: ${tag.innerText}`);
+                }, 50);
+
+                setTimeout(() => {
+                    tag.style.transform = 'scale(1)';
+                    tag.style.backgroundColor = '';
+                    tag.style.color = '';
+                }, 300);
+            });
+        });
+    </script>
+    <!-- NIKITA LITVINENKO OSA LÕPP -->
 
     <!-- MINU OSA ALGUS -->
     <section class="minu-osa">
         <h2>Minu ainemapp</h2>
-        
         <p>Minu elu moto!</p>
-        
         <a href="SIIA_SINU_LINK" target="_blank">
             Vaata minu lehte
         </a>
-        
         <br><br>
-        
         <button onclick="alert('Tere!')">Vajuta</button>
     </section>
     <!-- MINU OSA LÕPP -->
+
+    <!-- IGOR OSA ALGUS -->
+    <section class="igor-osa">
+        <div class="igor-terminal-header">
+            <span class="igor-dot"></span><span class="igor-dot"></span><span class="igor-dot"></span>
+            <span class="igor-title">igor@fsociety:~/portfolio</span>
+        </div>
+
+        <div class="igor-content">
+            <div class="igor-image-wrapper">
+                <img src="igor-pilt/igor.jpg" alt="Igor" class="igor-pilt">
+                <div class="igor-glitch-overlay"></div>
+            </div>
+
+            <h2 class="igor-h2">Igor Aleksejev // Portfoolio</h2>
+
+            <div class="igor-data">
+                <p class="igor-p">> STATUS: <span class="igor-highlight">AKTIIVNE</span></p>
+                <p class="igor-p">> OSKUSED: [HTML, CSS, JS, C#, Python, PHP]</p>
+                <p class="igor-p">> BIO: Olen noorem tarkvaraarendaja. Tere tulemast süsteemi.</p>
+            </div>
+
+            <div class="igor-actions">
+                <a href="https://igoraleksejev24.thkit.ee/" target="_blank" class="igor-link">AVA_AINEMAPP</a>
+                <button class="igor-btn" id="igor-hack-btn">KÄIVITA_SKRIPT</button>
+            </div>
+        </div>
+    </section>
+    <!-- IGOR OSA LÕPP -->
+
+    <section class="martin-rossakov-box">
+        <h2 id="martin-rossakov-heading">Martin Rossakov Ainemapp</h2>
+        <p class="martin-rossakov-desc">
+            Tere! Mina olen Martin Rossakov. See on minu ainemapp, kus näitan oma oskusi ja projekte veebiarenduses.
+        </p>
+        <a href="https://martinrossakov24.thkit.ee/index.html" target="_blank" class="martin-rossakov-btn">
+            Vaata portfooliot
+        </a>
+        <p class="martin-rossakov-desc">
+            Siin saad vaadata ka kõiki minu tehtud töid, kasutatud linke, infot minu kohta ning WordPress lehte:
+        </p>
+        <div class="martin-rossakov-links">
+            <a href="https://martinrossakov24.thkit.ee/teemad_lindig.html" target="_blank" class="martin-rossakov-small-btn">
+                Kõik lingid
+            </a>
+            <a href="https://martinrossakov24.thkit.ee/tood.html" target="_blank" class="martin-rossakov-small-btn">
+                Minu tööd
+            </a>
+            <a href="https://martinrossakov24.thkit.ee/info.html" target="_blank" class="martin-rossakov-small-btn">
+                Info minu kohta
+            </a>
+            <a href="https://martinrossakov24.thkit.ee/wp/" target="_blank" class="martin-rossakov-small-btn">
+                WordPress leht
+            </a>
+        </div>
+        <br>
+        <button onclick="martinAlert()" class="martin-rossakov-action">
+            Vajuta mind
+        </button>
+        <p id="martin-rossakov-text"></p>
+    </section>
+
+    <!-- MAKSIMI OSA ALGUS -->
+    <section class="maksim-section">
+        <div class="maksim-card" id="maksim-card">
+            <div class="maksim-layout">
+                <div class="maksim-visual">
+                    <div class="maksim-avatar-ring">
+                        <div class="maksim-avatar">
+                            <span class="maksim-avatar-text">MT</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="maksim-content">
+                    <p class="maksim-eyebrow">Portfoolio kaart</p>
+                    <h2>Maksim Tsikvasvili</h2>
+                    <p class="maksim-role">Noorem Tarkvaraarendaja</p>
+                    <p class="maksim-text">
+                        Õpin TTHKs nooremaks tarkvaraarendajaks ning arendan samm-sammult oma oskusi veebiarenduse,
+                        programmeerimise ja praktiliste projektide kaudu.
+                    </p>
+                    <div class="maksim-actions">
+                        <a class="maksim-link" href="https://maksimtsikvasvili24.thkit.ee/" target="_blank" rel="noreferrer">
+                            Ava minu veebileht
+                        </a>
+                        <button class="maksim-button" id="maksim-button" type="button" onclick="toggleMaksimCard()">
+                            Näita rohkem
+                        </button>
+                    </div>
+                    <div class="maksim-extra" id="maksim-extra">
+                        <div class="maksim-extra-inner">
+                            <p class="maksim-status" id="maksim-status">
+                                Dünaamiline osa töötab: kaart on avatud, toonid on tugevamad ja kontaktid on rõhutatud.
+                            </p>
+                            <div class="maksim-socials">
+                                <a class="maksim-social" href="https://github.com/maksimts-kool" target="_blank" rel="noreferrer" aria-label="GitHub">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M12 2C6.477 2 2 6.589 2 12.248c0 4.526 2.865 8.365 6.839 9.72.5.094.682-.221.682-.493 0-.243-.009-.888-.014-1.743-2.782.616-3.37-1.37-3.37-1.37-.455-1.177-1.11-1.49-1.11-1.49-.908-.636.069-.624.069-.624 1.004.072 1.532 1.053 1.532 1.053.892 1.564 2.341 1.112 2.91.85.091-.664.349-1.112.635-1.367-2.22-.258-4.555-1.136-4.555-5.056 0-1.117.389-2.031 1.029-2.747-.103-.259-.446-1.3.098-2.71 0 0 .84-.276 2.75 1.05A9.303 9.303 0 0 1 12 6.836a9.27 9.27 0 0 1 2.505.347c1.909-1.326 2.748-1.05 2.748-1.05.546 1.41.203 2.451.1 2.71.64.716 1.027 1.63 1.027 2.747 0 3.93-2.339 4.794-4.566 5.047.359.317.678.942.678 1.899 0 1.371-.012 2.476-.012 2.812 0 .274.18.592.688.492A10.276 10.276 0 0 0 22 12.248C22 6.589 17.523 2 12 2z"/>
+                                    </svg>
+                                </a>
+                                <a class="maksim-social" href="https://t.me/maksimts3" target="_blank" rel="noreferrer" aria-label="Telegram">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M21.944 4.665c.302-1.423-.516-1.98-1.74-1.533L2.84 9.92c-1.186.458-1.17 1.12-.216 1.412l4.454 1.42 10.31-6.62c.487-.32.932-.148.566.183l-8.356 7.63-.326 4.856c.477 0 .688-.223.955-.486l2.293-2.252 4.77 3.63c.879.495 1.507.24 1.726-.84l2.928-13.188z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MAKSIMI OSA LÕPP -->
 
     <!-- NASTJA OSA ALGUS -->
     <section class="nastja-section">
@@ -63,8 +277,134 @@
             </div>
         </div>
     </section>
+    <!-- NASTJA OSA LÕPP -->
 
+    <!-- OLEKSANDRA RYSHNIAK -->
+    <section class="oleksa-section">
+        <div class="oleksa-top">
+            <img src="images/pilt_oleksa.jpg" alt="Oleksandra" class="oleksa-avatar">
+            <div>
+                <h2 class="oleksa-name">Oleksandra Ryshniak</h2>
+                <p class="oleksa-role">TARpv24 · Noorem Tarkvaraarendaja</p>
+            </div>
+        </div>
+        <div class="oleksa-body">
+            <p class="oleksa-bio">
+                Tere! Õpin TTHK-s noorem tarkvaraarendaja erialal ning tegelen programmeerimise,
+                robootika ja veebirakendustega. Minu portfoolios leiate projekte sellistes
+                valdkondades nagu Python, C#, SQL, JavaScript ja Arduino.
+            </p>
+            <div class="oleksa-grid">
+                <div class="oleksa-skill">
+                    <p class="oleksa-skill-name">Python</p>
+                    <p class="oleksa-skill-sub">OOP, graafikud</p>
+                </div>
+                <div class="oleksa-skill">
+                    <p class="oleksa-skill-name">SQL / MongoDB</p>
+                    <p class="oleksa-skill-sub">Andmebaasid, päringud</p>
+                </div>
+                <div class="oleksa-skill">
+                    <p class="oleksa-skill-name">JavaScript</p>
+                    <p class="oleksa-skill-sub">React, funktsioonid</p>
+                </div>
+                <div class="oleksa-skill">
+                    <p class="oleksa-skill-name">Robootika</p>
+                    <p class="oleksa-skill-sub">Arduino, andurid</p>
+                </div>
+                <div class="oleksa-skill">
+                    <p class="oleksa-skill-name">C#</p>
+                    <p class="oleksa-skill-sub">OOP, rakendused</p>
+                </div>
+                <div class="oleksa-skill">
+                    <p class="oleksa-skill-name">HTML / CSS</p>
+                    <p class="oleksa-skill-sub">Veebidisain, WordPress</p>
+                </div>
+            </div>
+            <div class="oleksa-footer">
+                <button class="oleksa-btn" id="oleksa-contact-btn">
+                    Võta ühendust
+                </button>
+                <a class="oleksa-btn" href="https://oleksandraryshniak24.thkit.ee/wp1/" target="_blank">
+                    Vaata portfooliot
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- OLEKSANDRA RYSHNIAK LÕPP -->
+
+    <!-- ARTJOM OSA ALGUS -->
+    <section class="artjom-section">
+        <h2 class="artjom-title">Tere, olen Artjom!</h2>
+        <p class="artjom-desc">Mina olen õpilane TARpv24 grupist. Vaata minu portfoolio allpool!</p>
+        <a class="artjom-link" href="https://artjompoldsaar24.thkit.ee/">Minu portfolio -></a><br>
+        <button class="artjom-btn" onclick="artjomAlert()">Utle tere</button>
+    </section>
+    <!-- ARTJOM OSA LÕPP -->
+
+    <!-- ADRIANA OSA ALGUS -->
+    <section class="adriana-section">
+        <div class="adriana-card">
+            <div class="adriana-header">
+                <div class="adriana-avatar">
+                    <img src="images/adriana.jpg" alt="Adriana Pikaljov" class="adriana-foto">
+                </div>
+                <div class="adriana-info">
+                    <h2 class="adriana-nimi">Adriana Pikaljov</h2>
+                    <p class="adriana-tiitel">TARpv24 · oppija</p>
+                </div>
+            </div>
+            <p class="adriana-kirjeldus">
+                Tere! Olen 18-aastane programmeerimishuvilane TTHKst.
+                Minu ainemapist leiad materjale <strong>Python, C#, SQL, Robotika</strong> ja
+                <strong>Veebirakenduste</strong> kohta.
+            </p>
+            <div class="adriana-teemad">
+                <span class="adriana-tag">Python &amp; OOP</span>
+                <span class="adriana-tag">C#</span>
+                <span class="adriana-tag">Andmebaasid</span>
+                <span class="adriana-tag">Robotika</span>
+                <span class="adriana-tag">Veebirakendus</span>
+            </div>
+            <div class="adriana-nupud">
+                <a href="https://adrianapikaljov24.thkit.ee/wp/" target="_blank" class="adriana-link-nupp">
+                    Vaata minu ainemappi ->
+                </a>
+                <button class="adriana-hello-nupp" onclick="adrianaHello()">Ullata mind!</button>
+            </div>
+        </div>
+    </section>
+    <!-- ADRIANA OSA LÕPP -->
+
+    <script src="illia.js"></script>
+    <script src="igor/igor-bg.js"></script>
     <script>
+        function martinAlert() {
+            alert("Tere Martinilt! 👋");
+            document.getElementById("martin-rossakov-text").innerHTML =
+                "Ava lingid ja vaata minu töid! 🚀";
+        }
+
+        function toggleMaksimCard() {
+            const sectionCard = document.getElementById("maksim-card");
+            const actionButton = document.getElementById("maksim-button");
+            const isExpanded = sectionCard.classList.toggle("maksim-card--active");
+            actionButton.textContent = isExpanded ? "Peida" : "Näita rohkem";
+        }
+
+        document.getElementById("igor-hack-btn").addEventListener("click", function () {
+            alert("SÜSTEEM ON VALMIS. HELLO FRIEND.");
+            this.innerHTML = "LIGIPÄÄS_OLEMAS";
+            this.style.borderColor = "#ff0000";
+            this.style.color = "#ff0000";
+        });
+
+        document.getElementById("oleksa-contact-btn").addEventListener("click", function () {
+            alert("Kirjuta mulle: oleksandraryshniak@gmail.com");
+        });
+
+        function artjomAlert() {
+            alert("Tere! Olen Artjom, tere tulemast minu sektsiooni!");
+        }
         function nastjaHello() {
             const teated = [
                 "Tere!  Vaata minu ainemappi — seal on palju huvitavat!",
@@ -75,7 +415,306 @@
             const juhuslik = teated[Math.floor(Math.random() * teated.length)];
             alert(juhuslik);
         }
+
+        function adrianaHello() {
+            const teated = [
+                "Tere! Vaata minu ainemappi — seal on palju kasulikke materjale!",
+                "Fun fact: Adriana ja Nastja kasutavad chatgpt",
+                "Ma õpin TTHKs TARpv24 rühmas"
+            ];
+            const juhuslik = teated[Math.floor(Math.random() * teated.length)];
+            alert(juhuslik);
+        }
+        </script>
+
+    <!-- Mariia OSA ALGUS -->
+    <section class="mariia-section">
+        <h2><img src="images/Mariia_pilt.png" alt="Mariia foto" class="mariia-pilt">Minu portfoolio</h2>
+        <p>Tere! Minu nimi on Mariia. Olen TARpv24 rühma õpilane. Siit leiad minu tööd ja projektid.</p>
+
+        <div class="mariia-info">
+            <h3>Minust lähemalt</h3>
+            <ul>
+                <li>Õpin tarkvaraarendust ja naudin veebilehtede loomist.</li>
+                <li>Mind huvitavad disain, animatsioonid ja kasutajakogemus.</li>
+                <li>Arendan end HTML, CSS, JavaScripti ja PHP valdkondades.</li>
+            </ul>
+        </div>
+
+        <a href="https://mariiaposvystak24.thkit.ee" class="portfoliomariia-btn" target="_blank">Ava portfoolio</a>
+
+        <button class="hello-btnmariia" onclick="showMessage_mariia()">E-post</button>
+    </section>
+
+    <script>
+        function showMessage_mariia() {
+            alert("Minu e-post on posvytsakmariia@gmail.com");
+        }
     </script>
+    <!-- Mariia OSA LÕPP -->
+
+    <!-- Nikita Nikiforov OSA ALGUS -->
+    <section class="nikitan-section">
+        <div class="nikitan-kaart">
+            <div class="nikitan-header">
+                <div class="nikitan-avatar">
+                    <img src="images/nikitanfoto.jpeg" alt="avatar">
+                </div>
+                <div>
+                    <p class="nikitan-nimi">Nikita Nikiforov</p>
+                    <p class="nikitan-roll">Noorem Tarkvaarendaja · Tallinna Tööstushariduskeskus</p>
+                </div>
+            </div>
+
+            <hr class="nikitan-joon">
+
+            <div class="nikitan-oskused">
+                <span class="nikitan-badge">HTML / CSS</span>
+                <span class="nikitan-badge">JavaScript</span>
+                <span class="nikitan-badge">Git</span>
+                <span class="nikitan-badge">Python</span>
+                <span class="nikitan-badge">C#</span>
+            </div>
+
+            <p class="nikitan-bio">
+                Olen Tallinna Tööstushariduskeskuse õpilane. Õpin nooremprogrammeerijaks ja arvan, et parim viis õppida on praktiseerida ja teenida palju raha.
+            </p>
+
+            <div class="nikitan-stats">
+                <div class="nikitan-stat"><span class="nikitan-stat-arv">2</span><span class="nikitan-stat-silt">õppeaasta</span></div>
+                <div class="nikitan-stat"><span class="nikitan-stat-arv">120+</span><span class="nikitan-stat-silt">Varastas Artem Põldsaarelt töö</span></div>
+                <div class="nikitan-stat"><span class="nikitan-stat-arv">3</span><span class="nikitan-stat-silt">aktiivseid projekte</span></div>
+            </div>
+
+            <a href="https://nikitanikiforov24.thkit.ee/" target="_blank"><button class="nikitan-nupp">Minu veebileht</button></a>
+            <button class="nikitan-nupp" onclick="nikitanVotaUhendust()">Võta ühendust</button>
+            <p class="nikitan-teade" id="nikitan-teade"></p>
+        </div>
+    </section>
+
+    <script>
+        function nikitanVotaUhendust() {
+            var el = document.getElementById('nikitan-teade');
+            el.textContent = 'Tere! Sain su sõnumi kätte — vastan esimesel võimalusel.';
+            setTimeout(function() { el.textContent = ''; }, 3000);
+        }
+    </script>
+    <!-- Nikita Nikiforov OSA LÕPP -->
+
+    <!-- MILAN OSA ALGUS -->
+    <section class="Milan-section">
+        <div class="Milan-card">
+
+            <!-- DotField canvas — фон карточки -->
+            <canvas class="Milan-dotfield" id="milanDotCanvas"></canvas>
+            <!-- SVG glow поверх canvas, под контентом -->
+            <svg class="Milan-dotfield-svg" id="milanDotSvg" aria-hidden="true">
+                <defs>
+                    <radialGradient id="milanGlow">
+                        <stop offset="0%" stop-color="#3a0a0a" />
+                        <stop offset="100%" stop-color="transparent" />
+                    </radialGradient>
+                </defs>
+                <circle id="milanGlowCircle" cx="-9999" cy="-9999" r="160"
+                        fill="url(#milanGlow)" style="opacity:0;" />
+            </svg>
+
+            <!-- Контент карточки -->
+            <div class="Milan-content">
+                <div class="Milan-accent-bar"></div>
+                <h2 class="Milan-title">Milan <span class="Milan-highlight">Petrovski</span></h2>
+                <p class="Milan-tagline">🎨 Veebidisaini entusiast · TARpv24</p>
+                <p class="Milan-bio">
+                    Tere! Olen Milan — loominguline mõtleja, kes ühendab disaini ja koodi.
+                    Minu ainemapp näitab minu teekonda algajast arendajaks.
+                </p>
+                <div class="Milan-skills">
+                    <span class="Milan-tag">HTML</span>
+                    <span class="Milan-tag">CSS</span>
+                    <span class="Milan-tag">JavaScript</span>
+                    <span class="Milan-tag">Git</span>
+                </div>
+                <a class="Milan-btn" href="https://milanpetrovski24.thkit.ee" target="_blank">
+                    📂 Vaata minu ainemappi
+                </a>
+                <div class="Milan-footer">
+                    <button class="Milan-surprise-btn" onclick="milanSurprise()">🔥 Vajuta mind!</button>
+                    <p class="Milan-msg" id="milanMsg"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        /* ===== Milan JS ===== */
+        const MilanQuotes = [
+            "🚀 Kood on luule, mida arvutid mõistavad!",
+            "💡 Iga viga on uus õppetund.",
+            "🎯 Commit by commit — suureks arendajaks!",
+            "🔥 Programmeerimine = superjõud!"
+        ];
+        let MilanIdx = 0;
+        function MilanSurprise() {
+            const msg = document.getElementById('MilanMsg');
+            msg.textContent = MilanQuotes[MilanIdx % MilanQuotes.length];
+            msg.classList.remove('Milan-msg-pop');
+            void msg.offsetWidth;
+            msg.classList.add('Milan-msg-pop');
+            MilanIdx++;
+        }
+
+        /* ===== MILAN JS ===== */
+        const milanQuotes = [
+            "🎨 Disain on vaikimine, mis räägib!",
+            "💥 Iga piksel on otsus.",
+            "🚀 Kood + loovus = maagia!",
+            "⚡ Veeb on minu lõuend."
+        ];
+        let milanIdx = 0;
+        function milanSurprise() {
+            const msg = document.getElementById('milanMsg');
+            msg.textContent = milanQuotes[milanIdx % milanQuotes.length];
+            msg.classList.remove('Milan-msg-pop');
+            void msg.offsetWidth;
+            msg.classList.add('Milan-msg-pop');
+            milanIdx++;
+        }
+
+        /* ===== MILAN DOTFIELD (vanilla JS port) ===== */
+        (function () {
+            const canvas  = document.getElementById('milanDotCanvas');
+            const glowEl  = document.getElementById('milanGlowCircle');
+            if (!canvas) return;
+
+            const ctx = canvas.getContext('2d', { alpha: true });
+            const dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+            // props
+            const DOT_RADIUS    = 1.5;
+            const DOT_SPACING   = 14;
+            const BULGE_STRENGTH = 60;
+            const CURSOR_RADIUS = 500;
+            const GLOW_RADIUS   = 160;
+            const GRADIENT_FROM = 'rgba(229, 62, 62, 0.30)';
+            const GRADIENT_TO   = 'rgba(120, 60, 60, 0.18)';
+            const TWO_PI        = Math.PI * 2;
+
+            let dots = [];
+            let w = 0, h = 0;
+            let offsetX = 0, offsetY = 0;
+            let frameCount = 0;
+            let rafId;
+            let glowOpacity = 0;
+            let engagement  = 0;
+
+            const mouse = { x: -9999, y: -9999, prevX: -9999, prevY: -9999, speed: 0 };
+
+            function buildDots(W, H) {
+                const step = DOT_RADIUS + DOT_SPACING;
+                const cols = Math.floor(W / step);
+                const rows = Math.floor(H / step);
+                const padX = (W % step) / 2;
+                const padY = (H % step) / 2;
+                dots = [];
+                for (let r = 0; r < rows; r++) {
+                    for (let c = 0; c < cols; c++) {
+                        const ax = padX + c * step + step / 2;
+                        const ay = padY + r * step + step / 2;
+                        dots.push({ ax, ay, sx: ax, sy: ay });
+                    }
+                }
+            }
+
+            function resize() {
+                const rect = canvas.parentElement.getBoundingClientRect();
+                w = rect.width;
+                h = rect.height;
+                canvas.width  = w * dpr;
+                canvas.height = h * dpr;
+                canvas.style.width  = w + 'px';
+                canvas.style.height = h + 'px';
+                ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+                offsetX = rect.left + window.scrollX;
+                offsetY = rect.top  + window.scrollY;
+                buildDots(w, h);
+            }
+
+            function onMouseMove(e) {
+                mouse.x = e.pageX - offsetX;
+                mouse.y = e.pageY - offsetY;
+            }
+
+            // mouse speed tracker
+            setInterval(function () {
+                const dx = mouse.prevX - mouse.x;
+                const dy = mouse.prevY - mouse.y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                mouse.speed += (dist - mouse.speed) * 0.5;
+                if (mouse.speed < 0.001) mouse.speed = 0;
+                mouse.prevX = mouse.x;
+                mouse.prevY = mouse.y;
+            }, 20);
+
+            function tick() {
+                frameCount++;
+                const len = dots.length;
+                const crSq = CURSOR_RADIUS * CURSOR_RADIUS;
+                const rad  = DOT_RADIUS / 2;
+
+                const targetEng = Math.min(mouse.speed / 5, 1);
+                engagement += (targetEng - engagement) * 0.06;
+                if (engagement < 0.001) engagement = 0;
+
+                glowOpacity += (engagement - glowOpacity) * 0.08;
+                glowEl.setAttribute('cx', mouse.x);
+                glowEl.setAttribute('cy', mouse.y);
+                glowEl.style.opacity = glowOpacity;
+
+                ctx.clearRect(0, 0, w, h);
+
+                const grad = ctx.createLinearGradient(0, 0, w, h);
+                grad.addColorStop(0, GRADIENT_FROM);
+                grad.addColorStop(1, GRADIENT_TO);
+                ctx.fillStyle = grad;
+
+                ctx.beginPath();
+                for (let i = 0; i < len; i++) {
+                    const d = dots[i];
+                    const dx = mouse.x - d.ax;
+                    const dy = mouse.y - d.ay;
+                    const distSq = dx * dx + dy * dy;
+
+                    if (distSq < crSq && engagement > 0.01) {
+                        const dist  = Math.sqrt(distSq);
+                        const t     = 1 - dist / CURSOR_RADIUS;
+                        const push  = t * t * BULGE_STRENGTH * engagement;
+                        const angle = Math.atan2(dy, dx);
+                        d.sx += (d.ax - Math.cos(angle) * push - d.sx) * 0.15;
+                        d.sy += (d.ay - Math.sin(angle) * push - d.sy) * 0.15;
+                    } else {
+                        d.sx += (d.ax - d.sx) * 0.1;
+                        d.sy += (d.ay - d.sy) * 0.1;
+                    }
+
+                    ctx.moveTo(d.sx + rad, d.sy);
+                    ctx.arc(d.sx, d.sy, rad, 0, TWO_PI);
+                }
+                ctx.fill();
+
+                rafId = requestAnimationFrame(tick);
+            }
+
+            // init
+            resize();
+            window.addEventListener('resize', function () {
+                cancelAnimationFrame(rafId);
+                setTimeout(function () { resize(); rafId = requestAnimationFrame(tick); }, 100);
+            });
+            window.addEventListener('mousemove', onMouseMove, { passive: true });
+            rafId = requestAnimationFrame(tick);
+        })();
+    </script>
+
     <!-- NASTJA OSA LÕPP -->
     <!-- MARK OSA ALGUS -->
     <section class="markjurgen-section">
@@ -85,6 +724,7 @@
             <p class="markjurgen-motto">Ma õpin Tallinnas Tööstushariduskeskuses.<br>
                 Mul on põhiteadmised Pythonist, SQL-ist ning natuke ka C#, C++ ja JavaScriptist.<br>
                 Samuti olen töötanud väikeste projektidega, kasutades Node.js-i ja PHP-d.</p>
+
 
             <div class="markjurgen-info">
                 <span class="markjurgen-badge">IT-õpilane</span>
