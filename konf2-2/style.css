@@ -1,0 +1,600 @@
+/* ═══════════════════════════════════════════
+   RESET & BASE
+═══════════════════════════════════════════ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 300;
+  background: #0c0c0f;
+  color: #e8e8ed;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ═══════════════════════════════════════════
+   LEHEKÜLJE PÄIS
+═══════════════════════════════════════════ */
+.page-header {
+  background: #0c0c0f;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  padding: 80px 24px 64px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header::before {
+  content: '';
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 300px;
+  background: radial-gradient(ellipse, rgba(99,102,241,0.18) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.page-header__inner {
+  max-width: 760px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.page-header__label {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #6366f1;
+  background: rgba(99,102,241,0.12);
+  border: 1px solid rgba(99,102,241,0.25);
+  padding: 5px 14px;
+  border-radius: 100px;
+  margin-bottom: 28px;
+}
+
+.page-header__title {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(36px, 6vw, 72px);
+  font-weight: 800;
+  line-height: 1.08;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  margin-bottom: 20px;
+}
+
+.page-header__sub {
+  font-size: 17px;
+  color: rgba(255,255,255,0.45);
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+
+.page-header__members {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.page-header__members span {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(255,255,255,0.55);
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 6px 18px;
+  border-radius: 100px;
+}
+
+
+/* ═══════════════════════════════════════════
+   SEKTSIOON 1 — MILAN  (indigo / navy)
+═══════════════════════════════════════════ */
+.milan-section {
+  background: #0e0e1a;
+  padding: 80px 24px;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  position: relative;
+}
+
+.milan-section::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #4f46e5, #818cf8);
+}
+
+.milan-section__container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.milan-section__badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #818cf8;
+  background: rgba(79,70,229,0.12);
+  border: 1px solid rgba(79,70,229,0.3);
+  padding: 5px 14px;
+  border-radius: 100px;
+  margin-bottom: 36px;
+}
+
+.milan-section__hero {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
+}
+
+.milan-section__title-block {
+  flex: 1;
+  min-width: 200px;
+}
+
+.milan-section__tool-name {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+
+.milan-section__tagline {
+  font-size: 16px;
+  color: rgba(255,255,255,0.42);
+  font-weight: 300;
+}
+
+.milan-section__logo-wrap {
+  flex-shrink: 0;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 20px;
+  padding: 20px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.milan-section__logo {
+  height: 56px;
+  width: auto;
+  object-fit: contain;
+}
+
+.milan-section__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.milan-section__card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 16px;
+  padding: 28px;
+  transition: border-color 0.2s;
+}
+
+.milan-section__card:hover {
+  border-color: rgba(99,102,241,0.4);
+}
+
+.milan-section__card-icon {
+  font-size: 24px;
+  margin-bottom: 14px;
+}
+
+.milan-section__card-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: #818cf8;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.milan-section__history-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.milan-section__history-list li {
+  font-size: 14px;
+  color: rgba(255,255,255,0.62);
+  padding-left: 14px;
+  border-left: 2px solid rgba(99,102,241,0.45);
+}
+
+.milan-section__history-list li strong {
+  color: rgba(255,255,255,0.88);
+  font-weight: 500;
+}
+
+.milan-section__features-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.milan-section__features-list li {
+  font-size: 14px;
+  color: rgba(255,255,255,0.62);
+  padding-left: 20px;
+  position: relative;
+}
+
+.milan-section__features-list li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+.milan-section__screenshots {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.milan-section__figure {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.milan-section__screenshot {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.07);
+  background: rgba(255,255,255,0.03);
+  display: block;
+}
+
+.milan-section__caption {
+  font-size: 12px;
+  color: rgba(255,255,255,0.32);
+  text-align: center;
+  font-style: italic;
+}
+
+/* LIGHTBOX */
+.milan-lightbox {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+}
+
+.milan-lightbox__img {
+  max-width: 90%;
+  max-height: 85%;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+}
+
+.milan-lightbox__close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 36px;
+  color: white;
+  cursor: pointer;
+}
+
+/* курсор при наведении */
+.milan-section__screenshot {
+  cursor: zoom-in;
+}
+
+/* ═══════════════════════════════════════════
+   SEKTSIOON 2 — NIKIFOROV (Jira)  (Светлый стиль)
+═══════════════════════════════════════════ */
+
+.nikiforov-section {
+  background: #f1f5f9; /* Мягкий светлый фон, не режет глаза */
+  padding: 80px 24px;
+  border-bottom: 1px solid #e2e8f0;
+  position: relative;
+}
+
+.nikiforov-section::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #0052cc, #2684ff);
+}
+
+.nikiforov-section__container {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+.nikiforov-section__badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #0052cc;
+  background: rgba(0,82,204,0.1);
+  border: 1px solid rgba(0,82,204,0.2);
+  padding: 5px 14px;
+  border-radius: 100px;
+  margin-bottom: 36px;
+}
+
+/* ===== NIKIFOROV CARD ===== */
+.nikiforov-card {
+  width: 620px;
+  margin: 0 auto;
+  background: #ffffff; /* Белая карточка */
+  border: 1px solid #cbd5e1;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05); /* Легкая тень для объема */
+  transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+}
+
+.nikiforov-card:hover {
+  transform: translateY(-6px);
+  border-color: #93c5fd;
+  box-shadow: 0 16px 40px rgba(0,82,204,0.12);
+}
+
+.nikiforov-card-header {
+  background: linear-gradient(135deg, #0042aa, #2684ff);
+  padding: 28px 24px 22px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nikiforov-logo {
+  width: 52px;
+  height: 52px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.nikiforov-logo svg { width: 32px; height: 32px; }
+
+.nikiforov-card-title {
+  font-family: 'Syne', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 800;
+  color: #fff;
+  margin: 0 0 2px;
+}
+
+.nikiforov-card-sub {
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.8);
+  margin: 0;
+}
+
+.nikiforov-card-body { padding: 22px 24px; }
+
+.nikiforov-img-slot {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: #f8fafc;
+  border: 1.5px dashed #cbd5e1;
+  border-radius: 12px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+}
+
+.nikiforov-img-slot img {
+  max-width: 80px;
+  max-height: 80px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+  border-radius: 8px;
+  display: block;
+  cursor: zoom-in;
+}
+
+.nikiforov-block-label {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #0052cc; /* Синий акцент */
+  margin-bottom: 10px;
+}
+
+.nikiforov-history-text {
+  font-size: 0.88rem;
+  color: #475569; /* Темно-серый текст для читаемости */
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.nikiforov-history-text strong { color: #0f172a; font-weight: 600; }
+
+.nikiforov-features {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nikiforov-features li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 0.86rem;
+  color: #475569;
+  padding-left: 14px;
+  border-left: 2px solid #0052cc; /* Синяя полоска слева */
+}
+
+.nikiforov-features li .nikiforov-feat-icon {
+  font-size: 1rem;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.nikiforov-features li strong { color: #0f172a; font-weight: 600; }
+
+.nikiforov-screens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.nikiforov-screen-slot {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 14px 10px;
+  text-align: center;
+  overflow: hidden;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.nikiforov-screen-slot:hover {
+  border-color: #93c5fd;
+  background: #ffffff;
+}
+
+.nikiforov-screen-slot img {
+  max-width: 100%;
+  max-height: 120px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+  cursor: zoom-in;
+}
+
+.nikiforov-screen-slot span { font-size: 1.1rem; display: block; margin-bottom: 4px; }
+.nikiforov-screen-slot p { font-size: 0.7rem; color: #64748b; margin: 8px 0 0; line-height: 1.3; font-weight: 500;}
+
+.nikiforov-card-footer {
+  border-top: 1px solid #e2e8f0;
+  background: #f8fafc;
+  padding: 12px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 20px 20px;
+}
+
+.nikiforov-status {
+  font-size: 0.75rem;
+  color: #059669; /* Более глубокий зеленый для светлого фона */
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nikiforov-status::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  background: #059669;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.nikiforov-author { font-size: 0.72rem; color: #94a3b8; font-weight: 500; }
+
+/* ===== NIKIFOROV LIGHTBOX (Оставляем темным для контраста фото) ===== */
+.nikiforov-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.9);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+  cursor: zoom-out;
+}
+
+.nikiforov-lightbox.active {
+  display: flex;
+}
+
+.nikiforov-lightbox img {
+  max-width: 90vw;
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.4);
+  cursor: default;
+  animation: nikiforov-zoom-in 0.2s ease;
+}
+
+@keyframes nikiforov-zoom-in {
+  from { transform: scale(0.95); opacity: 0; }
+  to   { transform: scale(1);    opacity: 1; }
+}
+
+.nikiforov-lightbox-close {
+  position: fixed;
+  top: 20px;
+  right: 28px;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #fff;
+  font-size: 2rem;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  line-height: 1;
+  transition: background 0.2s;
+}
+
+.nikiforov-lightbox-close:hover {
+  background: rgba(255,255,255,0.25);
+}
