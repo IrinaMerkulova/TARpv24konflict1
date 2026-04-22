@@ -1120,8 +1120,14 @@
     background: #ffea80;
 }
 
+.mariia-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .hello-btnmariia {
-    margin-left: 10px;
     padding: 10px 20px;
     background: #b8860b;
     border: none;
