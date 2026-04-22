@@ -278,3 +278,233 @@ body {
     margin-top: 10px;
     color: #fde68a;
 }
+
+
+/* ================================================
+   NASTJA STYLES — lisa style.css faili LÕPPU
+   ================================================ */
+
+.nastja-section {
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    background: #0b0912;
+    color: #ddd8ff;
+    border-radius: 18px;
+    margin: 48px auto;
+    max-width: 900px;
+    overflow: hidden;
+    border: 1px solid #2a1a4a;
+    box-shadow:
+            0 0 0 1px #130828,
+            0 24px 64px rgba(110, 30, 200, 0.3),
+            0 4px 20px rgba(0,0,0,0.7);
+}
+
+/* --- Hero --- */
+.nastja-hero {
+    background: linear-gradient(135deg, #1c0640 0%, #31116b 55%, #0b0912 100%);
+    border-bottom: 1px solid #3d1a6e;
+    padding: 32px 36px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.nastja-hero::after {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 260px; height: 260px;
+    background: radial-gradient(circle, rgba(170, 80, 255, 0.12) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.nastja-logo-box {
+    width: 70px;
+    height: 70px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #8b2fff, #d060ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+            0 0 0 1px rgba(200, 100, 255, 0.3),
+            0 6px 28px rgba(140, 48, 255, 0.55);
+    flex-shrink: 0;
+}
+
+.nastja-ps {
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: -1px;
+}
+
+.nastja-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0 0 5px 0;
+    letter-spacing: -1.5px;
+    text-shadow: 0 0 40px rgba(190, 110, 255, 0.45);
+}
+
+.nastja-subtitle {
+    margin: 0;
+    font-size: 0.82rem;
+    color: #9060bb;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* --- Body --- */
+.nastja-body {
+    padding: 28px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* --- Cards --- */
+.nastja-card {
+    background: linear-gradient(135deg, rgba(55, 15, 100, 0.28), rgba(15, 8, 35, 0.55));
+    border: 1px solid rgba(130, 50, 220, 0.18);
+    border-radius: 14px;
+    padding: 22px 26px;
+    transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.nastja-card:hover {
+    border-color: rgba(170, 80, 255, 0.4);
+    box-shadow: 0 0 24px rgba(140, 50, 255, 0.1);
+}
+
+.nastja-card-title {
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: #bb80ff;
+    margin: 0 0 14px 0;
+}
+
+/* --- List --- */
+.nastja-list {
+    margin: 0;
+    padding-left: 18px;
+    line-height: 1.95;
+    color: #b0a0d8;
+}
+
+.nastja-list strong { color: #e2d9ff; }
+
+/* --- Description --- */
+.nastja-desc {
+    font-size: 0.92rem;
+    line-height: 1.8;
+    color: #9e90c0;
+    margin: 0 0 16px 0;
+}
+
+/* --- Features grid --- */
+.nastja-features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.nastja-feature {
+    background: rgba(100, 30, 180, 0.13);
+    border: 1px solid rgba(120, 50, 200, 0.22);
+    border-radius: 8px;
+    padding: 9px 14px;
+    font-size: 0.86rem;
+    color: #c5b0f0;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.nastja-feature:hover {
+    background: rgba(160, 70, 255, 0.22);
+    border-color: rgba(170, 80, 255, 0.5);
+    color: #e0d0ff;
+}
+
+/* --- Screenshots grid --- */
+.nastja-screenshots {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+/* 5th image spans full width */
+.nastja-fig--wide {
+    grid-column: 1 / -1;
+}
+
+.nastja-fig--wide img {
+    max-height: 260px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.nastja-fig {
+    margin: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(110, 40, 200, 0.22);
+    background: #07050f;
+    transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+
+.nastja-fig:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 36px rgba(140, 40, 255, 0.28);
+    border-color: rgba(180, 90, 255, 0.55);
+}
+
+.nastja-fig img {
+    width: 100%;
+    display: block;
+}
+
+.nastja-fig figcaption {
+    padding: 11px 14px 13px;
+    border-top: 1px solid rgba(100, 40, 180, 0.2);
+}
+
+.nastja-fig figcaption strong {
+    display: block;
+    font-size: 0.86rem;
+    color: #d0b8ff;
+    margin-bottom: 4px;
+}
+
+.nastja-fig figcaption p {
+    margin: 0;
+    font-size: 0.79rem;
+    color: #7060a0;
+    line-height: 1.55;
+}
+
+/* --- Signature --- */
+.nastja-sig {
+    text-align: right;
+    padding: 0 32px 20px;
+    font-size: 0.72rem;
+    color: #3a2858;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* --- Mobile --- */
+@media (max-width: 600px) {
+    .nastja-screenshots,
+    .nastja-features-grid { grid-template-columns: 1fr; }
+    .nastja-fig--wide { grid-column: auto; }
+    .nastja-body { padding: 18px 16px; }
+    .nastja-hero { padding: 22px 18px; }
+    .nastja-title { font-size: 1.9rem; }
+}
+
+/* ================================================
+   NASTJA STYLES LÕPP
+   ================================================ */
