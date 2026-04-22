@@ -1,0 +1,178 @@
+/* ОБЩЕЕ */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* ===================== */
+/* SECTION 1 (MARK) */
+/* ===================== */
+
+/* Основная секция */
+.user2-section {
+    background: linear-gradient(135deg, #0a1a2f, #0f2a4a);
+    padding: 60px 20px;
+    font-family: "Segoe UI", sans-serif;
+    color: #e6f0ff;
+}
+
+/* Контейнер */
+.user2-section__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: rgba(15, 35, 65, 0.9);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+/* Бейдж */
+.user2-section__badge {
+    display: inline-block;
+    background: #1f4fa3;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+/* Заголовок */
+.user2-section__title {
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* Контент */
+.user2-section__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+/* Карточки */
+.user2-section__item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 14px;
+    transition: 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.user2-section__item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* Подзаголовки */
+.user2-section__item h3 {
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #7fb3ff;
+}
+
+/* Текст */
+.user2-section__item p,
+.user2-section__item li {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #d6e4ff;
+}
+
+/* Список */
+.user2-section__item ul {
+    padding-left: 18px;
+}
+
+/* Картинки */
+.user2-section__item img {
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+}
+
+.user2-section__item img:hover {
+    transform: scale(1.03);
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+    .user2-section__content {
+        grid-template-columns: 1fr;
+    }
+
+    .user2-section__title {
+        font-size: 28px;
+    }
+}
+
+/* ===================== */
+/* SECTION 2 (ДРУГОЙ СТИЛЬ — ПРОЩЕ / ДРУГОЙ ЧЕЛ) */
+/* ===================== */
+
+.section-osa2 {
+    background: #f4f6f9;
+    color: #222;
+}
+
+.section-osa2 .container {
+    background: white;
+    padding: 30px;
+    border: 2px solid #ddd;
+}
+
+.section-osa2 .badge {
+    background: #333;
+    color: white;
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
+.section-osa2 h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.section-osa2 .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.section-osa2 .card {
+    background: #fafafa;
+    padding: 15px;
+    border: 1px solid #ccc;
+    width: 45%;
+}
+
+.section-osa2 h3 {
+    color: #444;
+}
+
+/* Адаптив */
+@media (max-width: 768px) {
+    .section-osa1 .grid,
+    .section-osa2 .grid {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .section-osa2 .card {
+        width: 100%;
+    }
+}
