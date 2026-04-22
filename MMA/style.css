@@ -440,8 +440,12 @@ body.lightbox-open {
   #kaart-1 {
     width: 100%;
   }
-<<<<<<< HEAD
+
+  .screenshot-grid {
+    grid-template-columns: 1fr;
+  }
 }
+
 /*Mariia Posvystak*/
 #mariia-section {
   --mg:   #d4a843;
@@ -807,7 +811,4 @@ body.lightbox-open {
   .m-logo-box { width:100px; height:100px; }
   .m-grid, .m-feats, .m-shots { grid-template-columns: 1fr; }
   .m-card.full { grid-column: 1; }
-}
-.screenshot-grid {
-  grid-template-columns: 1fr;
 }
