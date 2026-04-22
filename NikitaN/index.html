@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <title>Ainemapid</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<h1>TARpv24 Õpilaste ainemapid</h1>
+
+<!-- ===== NIKIFOROV — JIRA CARD ===== -->
+<div class="nikiforov-card">
+
+    <div class="nikiforov-card-header">
+        <div class="nikiforov-logo">
+            <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16 2L30 16L16 30L2 16L16 2Z" fill="white" opacity="0.25"/>
+                <path d="M16 8L24 16L16 20L12 16L16 8Z" fill="white"/>
+            </svg>
+        </div>
+        <div>
+            <p class="nikiforov-card-title">Jira</p>
+            <p class="nikiforov-card-sub">Atlassian · alates 2002</p>
+        </div>
+    </div>
+
+    <div class="nikiforov-card-body">
+
+        <!-- SCREENSHOT 1 — asenda päris logoga -->
+        <div class="nikiforov-img-slot">
+
+            <img src="NikitaJira/Jira_Logo.png" alt="123">
+
+        </div>
+
+        <div class="nikiforov-block-label">Lühike ajalugu</div>
+        <div class="nikiforov-history-text">
+            Jira lõid <strong>Mike Cannon-Brookes</strong> ja <strong>Scott Farquhar</strong>
+            Atlassiani asutamisel <strong>2002. aastal</strong>. Algne eesmärk oli asendada
+            tülikad e-kirja-põhised vigade jälgimised. Nimi tuleb Jaapani sõnast "Gojira" —
+            sisemine hüüdnimi konkurendi Bugzilla jaoks. Arendus jätkub aktiivselt tänapäevani.
+        </div>
+
+        <div class="nikiforov-block-label">Peamised funktsioonid</div>
+        <ul class="nikiforov-features">
+            <li>
+                <span class="nikiforov-feat-icon">📋</span>
+                <div><strong>Scrum & Kanban tahvlid</strong> — taskid liiguvad veergude vahel visuaalselt</div>
+            </li>
+            <li>
+                <span class="nikiforov-feat-icon">🐛</span>
+                <div><strong>Issue Tracking</strong> — vigade ja ülesannete jälgimine prioriteetide järgi</div>
+            </li>
+            <li>
+                <span class="nikiforov-feat-icon">📊</span>
+                <div><strong>Raportid</strong> — Burndown chart, velocity, progressi analüütika</div>
+            </li>
+            <li>
+                <span class="nikiforov-feat-icon">🔗</span>
+                <div><strong>Integratsioonid</strong> — GitHub, Slack, Figma ja 3000+ rakendust</div>
+            </li>
+        </ul>
+
+        <div class="nikiforov-block-label">Pildid (screenshots)</div>
+        <div class="nikiforov-screens">
+            <div class="nikiforov-screen-slot">
+                <span>📸</span>
+                <img src="NikitaJira/NikitaNJira1.png" alt="UI 1">
+                <p>Kanban/Scrum tahvel — To Do, In Progress, Done veerud</p>
+            </div>
+            <div class="nikiforov-screen-slot">
+                <span>📸</span>
+                <img src="NikitaJira/NikitaNJira2.png" alt="UI 2">
+                <strong>SCREENSHOT 3</strong>
+                <p>Avatud Issue — Priority, Assignee, Status</p>
+            </div>
+            <div class="nikiforov-screen-slot">
+                <span>📸</span>
+                <img src="NikitaJira/NikitaNJira3.png" alt="UI 3">
+                <strong>SCREENSHOT 4</strong>
+                <p>Burndown Chart raportis</p>
+            </div>
+            <div class="nikiforov-screen-slot">
+                <span>📸</span>
+                <img src="NikitaJira/NikitaNJira4.png" alt="UI 4">
+                <strong>SCREENSHOT 5</strong>
+                <p>Kalender (Timeline)</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="nikiforov-card-footer">
+        <span class="nikiforov-status">Arendus jätkub</span>
+        <span class="nikiforov-author">Nikiforov</span>
+    </div>
+
+</div>
+
+<div class="nikiforov-lightbox" id="nikiforovLightbox" onclick="nikiforovCloseLightbox()">
+    <button class="nikiforov-lightbox-close" onclick="nikiforovCloseLightbox()">&times;</button>
+    <img id="nikiforovLightboxImg" src="" alt="">
+</div>
+
+<script>
+    function nikiforovOpenLightbox(img) {
+        document.getElementById('nikiforovLightboxImg').src = img.src;
+        document.getElementById('nikiforovLightbox').classList.add('active');
+    }
+    function nikiforovCloseLightbox() {
+        document.getElementById('nikiforovLightbox').classList.remove('active');
+    }
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') nikiforovCloseLightbox();
+    });
+
+    // Вешаем onclick на все картинки внутри карточки
+    document.querySelectorAll('.nikiforov-img-slot img, .nikiforov-screen-slot img').forEach(function(img) {
+        img.style.cursor = 'zoom-in';
+        img.addEventListener('click', function(e) {
+            e.stopPropagation();
+            nikiforovOpenLightbox(this);
+        });
+    });
+</script>
+
+
+<!-- ===== NIKIFOROV CARD END ===== -->
+
+
+</body>
+</html>
