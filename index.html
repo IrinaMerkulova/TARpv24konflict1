@@ -757,5 +757,53 @@
             el.style.display = el.style.display === "none" ? "block" : "none";
         }
     </script>
+
+    <!-- NIKITA ORLENKO -->
+    <section class="nikita-dark-section">
+        <div class="nikita-dark-card">
+
+            <h2 class="nikita-dark-name">Nikita Orlenko</h2>
+            <p class="nikita-dark-role">TARpv24 · Noorem tarkvaraarendaja</p>
+
+            <p class="nikita-dark-about">
+                Õpin tarkvaraarendust ning loon programme ja veebirakendusi.
+                Mul on kogemus Python, JavaScript, andmebaaside ja GUI projektidega.
+            </p>
+
+            <!-- КНОПКИ -->
+            <div class="nikita-buttons">
+
+                <a href="https://nikitaorlenko24.thkit.ee/WP/"
+                   target="_blank"
+                   class="nikita-dark-btn">
+                    Vaata portfooliot
+                </a>
+
+                <a href="#"
+                   class="nikita-dark-btn nikita-effect-btn"
+                   onclick="nikitaFlash(event)">
+                    Efekt 💥
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- NIKITA ORLENKO LÕPP -->
+
+    <script>
+        function nikitaFlash(event) {
+            event.preventDefault();
+
+            const card = document.querySelector(".nikita-dark-card");
+
+            card.classList.add("nikita-flash");
+
+            setTimeout(() => {
+                card.classList.remove("nikita-flash");
+            }, 600);
+        }
+    </script>
+        <!-- NIKITA ORLENKO LÕPP -->
 </body>
 </html>
