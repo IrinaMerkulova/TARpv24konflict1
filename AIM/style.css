@@ -1,0 +1,522 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #222;
+}
+
+.meeskond-header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #1a1a2e;
+    color: #ffffff;
+}
+
+.meeskond-header p {
+    color: #b0c4de;
+    margin-top: 8px;
+}
+
+.meeskond-main {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* === MARTIN SECTION (Microsoft Project) === */
+.martin-section {
+    background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 15px;
+    max-width: 900px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+}
+
+.martin-title {
+    text-align: center;
+    font-size: 28px;
+    color: #2b579a;
+    margin-bottom: 20px;
+}
+
+.martin-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.martin-logo img {
+    width: 120px;
+    transition: transform 0.3s ease;
+}
+
+.martin-logo img:hover {
+    transform: scale(1.1);
+}
+
+.martin-content h3 {
+    margin-top: 20px;
+    color: #2b579a;
+}
+
+.martin-content ul {
+    padding-left: 20px;
+}
+
+.martin-content li {
+    margin-bottom: 8px;
+}
+
+.martin-content p {
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.martin-features {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.martin-images {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+.martin-figure {
+    width: 48%;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.martin-figure:hover {
+    transform: translateY(-5px);
+}
+
+.martin-figure img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.martin-figure img:hover {
+    transform: scale(1.03);
+}
+
+/* Caption */
+.martin-figure figcaption {
+    margin-top: 10px;
+}
+
+.martin-figure strong {
+    display: block;
+    color: #2b579a;
+    margin-bottom: 5px;
+}
+
+.martin-figure p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+}
+.martin-signature {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #2b579a;
+    letter-spacing: 1px;
+    opacity: 0.8;
+    position: relative;
+}
+
+.martin-signature::before {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #2b579a;
+    margin: 0 auto 10px auto;
+    border-radius: 2px;
+}
+
+.martin-signature:hover {
+    opacity: 1;
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+@media (max-width: 768px) {
+    .martin-figure {
+        width: 100%;
+    }
+}
+
+/* ILLIA */
+/* =========================
+   PROJECTLIBRE SECTION
+   UNIQUE STYLE (no conflicts)
+   ========================= */
+
+.pl-section {
+    background: radial-gradient(circle at top, #1f2937, #0b1220);
+    color: #e5e7eb;
+    padding: 40px;
+    margin-top: 30px;
+    border-radius: 18px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.6);
+    font-family: Arial, sans-serif;
+}
+
+/* TITLE */
+.pl-title {
+    font-size: 34px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #60a5fa;
+    letter-spacing: 1px;
+}
+
+/* LOGO */
+.pl-logo-box {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pl-logo-box img {
+    width: 120px;
+    animation: plFloat 3s ease-in-out infinite;
+}
+
+/* CONTENT CARD */
+.pl-content {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+}
+
+/* FEATURES */
+.pl-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.pl-features li {
+    padding: 6px 0;
+}
+
+/* IMAGES */
+.pl-images {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.pl-figure {
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.2);
+}
+
+.pl-figure img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* CAPTION */
+.pl-figure figcaption {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #cbd5e1;
+}
+
+/* SIGNATURE */
+.pl-signature {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+/* ANIMATION */
+@keyframes plFloat {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+.pl-button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border: none;
+    background: #3b82f6;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pl-button:hover {
+    background: #2563eb;
+    transform: scale(1.05);
+}
+
+.pl-fact {
+    margin-top: 10px;
+    color: #fde68a;
+}
+
+
+/* ================================================
+   NASTJA STYLES — lisa style.css faili LÕPPU
+   ================================================ */
+
+.nastja-section {
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+    background: #0b0912;
+    color: #ddd8ff;
+    border-radius: 18px;
+    margin: 48px auto;
+    max-width: 900px;
+    overflow: hidden;
+    border: 1px solid #2a1a4a;
+    box-shadow:
+            0 0 0 1px #130828,
+            0 24px 64px rgba(110, 30, 200, 0.3),
+            0 4px 20px rgba(0,0,0,0.7);
+}
+
+/* --- Hero --- */
+.nastja-hero {
+    background: linear-gradient(135deg, #1c0640 0%, #31116b 55%, #0b0912 100%);
+    border-bottom: 1px solid #3d1a6e;
+    padding: 32px 36px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    overflow: hidden;
+}
+
+.nastja-hero::after {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 260px; height: 260px;
+    background: radial-gradient(circle, rgba(170, 80, 255, 0.12) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.nastja-logo-box {
+    width: 70px;
+    height: 70px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, #8b2fff, #d060ff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow:
+            0 0 0 1px rgba(200, 100, 255, 0.3),
+            0 6px 28px rgba(140, 48, 255, 0.55);
+    flex-shrink: 0;
+}
+
+.nastja-ps {
+    font-size: 1.75rem;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: -1px;
+}
+
+.nastja-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0 0 5px 0;
+    letter-spacing: -1.5px;
+    text-shadow: 0 0 40px rgba(190, 110, 255, 0.45);
+}
+
+.nastja-subtitle {
+    margin: 0;
+    font-size: 0.82rem;
+    color: #9060bb;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* --- Body --- */
+.nastja-body {
+    padding: 28px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* --- Cards --- */
+.nastja-card {
+    background: linear-gradient(135deg, rgba(55, 15, 100, 0.28), rgba(15, 8, 35, 0.55));
+    border: 1px solid rgba(130, 50, 220, 0.18);
+    border-radius: 14px;
+    padding: 22px 26px;
+    transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.nastja-card:hover {
+    border-color: rgba(170, 80, 255, 0.4);
+    box-shadow: 0 0 24px rgba(140, 50, 255, 0.1);
+}
+
+.nastja-card-title {
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: #bb80ff;
+    margin: 0 0 14px 0;
+}
+
+/* --- List --- */
+.nastja-list {
+    margin: 0;
+    padding-left: 18px;
+    line-height: 1.95;
+    color: #b0a0d8;
+}
+
+.nastja-list strong { color: #e2d9ff; }
+
+/* --- Description --- */
+.nastja-desc {
+    font-size: 0.92rem;
+    line-height: 1.8;
+    color: #9e90c0;
+    margin: 0 0 16px 0;
+}
+
+/* --- Features grid --- */
+.nastja-features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.nastja-feature {
+    background: rgba(100, 30, 180, 0.13);
+    border: 1px solid rgba(120, 50, 200, 0.22);
+    border-radius: 8px;
+    padding: 9px 14px;
+    font-size: 0.86rem;
+    color: #c5b0f0;
+    transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+
+.nastja-feature:hover {
+    background: rgba(160, 70, 255, 0.22);
+    border-color: rgba(170, 80, 255, 0.5);
+    color: #e0d0ff;
+}
+
+/* --- Screenshots grid --- */
+.nastja-screenshots {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+/* 5th image spans full width */
+.nastja-fig--wide {
+    grid-column: 1 / -1;
+}
+
+.nastja-fig--wide img {
+    max-height: 260px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.nastja-fig {
+    margin: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid rgba(110, 40, 200, 0.22);
+    background: #07050f;
+    transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+}
+
+.nastja-fig:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 36px rgba(140, 40, 255, 0.28);
+    border-color: rgba(180, 90, 255, 0.55);
+}
+
+.nastja-fig img {
+    width: 100%;
+    display: block;
+}
+
+.nastja-fig figcaption {
+    padding: 11px 14px 13px;
+    border-top: 1px solid rgba(100, 40, 180, 0.2);
+}
+
+.nastja-fig figcaption strong {
+    display: block;
+    font-size: 0.86rem;
+    color: #d0b8ff;
+    margin-bottom: 4px;
+}
+
+.nastja-fig figcaption p {
+    margin: 0;
+    font-size: 0.79rem;
+    color: #7060a0;
+    line-height: 1.55;
+}
+
+/* --- Signature --- */
+.nastja-sig {
+    text-align: right;
+    padding: 0 32px 20px;
+    font-size: 0.72rem;
+    color: #3a2858;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* --- Mobile --- */
+@media (max-width: 600px) {
+    .nastja-screenshots,
+    .nastja-features-grid { grid-template-columns: 1fr; }
+    .nastja-fig--wide { grid-column: auto; }
+    .nastja-body { padding: 18px 16px; }
+    .nastja-hero { padding: 22px 18px; }
+    .nastja-title { font-size: 1.9rem; }
+}
+
+/* ================================================
+   NASTJA STYLES LÕPP
+   ================================================ */
+
+
+.nastja-sig1 {
+    font-size: 0.78rem;
+    color: #9b78cc;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    border: 1px solid rgba(130, 50, 220, 0.3);
+    border-radius: 20px;
+    background: rgba(100, 30, 180, 0.1);
+}
