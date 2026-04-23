@@ -842,5 +842,61 @@
         }
     </script>
         <!-- NIKITA ORLENKO LÕPP -->
+
+    <!-- ROMAN ZAITSEV OSA ALGUS -->
+    <section class="roman-section">
+        <div class="roman-header">
+            <div class="roman-avatar-video">
+                <video autoplay loop muted playsinline>
+                    <source src="avatar/roman.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="roman-header-text">
+                <h2>Roman Zaitsev</h2>
+                <p>TARpv24 · Noorem tarkvaraarendaja</p>
+            </div>
+        </div>
+        <div class="roman-body">
+            <p class="roman-bio">
+                Tere! Olen Roman — õpin Tallinna Tööstushariduskeskuses noorem tarkvaraarendaja erialal.
+                Minu ainemapist leiad materjale veebiarenduse, andmebaaside ja programmeerimise kohta.
+            </p>
+            <div class="roman-skills">
+                <span class="roman-skill">HTML / CSS</span>
+                <span class="roman-skill">JavaScript</span>
+                <span class="roman-skill">Python</span>
+                <span class="roman-skill">SQL</span>
+                <span class="roman-skill">C#</span>
+
+            </div>
+            <div class="roman-footer">
+                <a href="https://romanzaitsev24.thkit.ee/" target="_blank" class="roman-btn primary">Vaata ainemappi</a>
+                <a href="https://github.com/" target="_blank" class="roman-btn">GitHub</a>
+                <button class="roman-btn" onclick="romanHello()">Vajuta mind!</button>
+            </div>
+            <p class="roman-msg" id="roman-msg"></p>
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('.roman-skill').forEach(tag => {
+            tag.addEventListener('click', () => {
+                tag.style.transform = 'scale(1.2)';
+                setTimeout(() => tag.style.transform = '', 200);
+            });
+        });
+        function romanHello() {
+            const msgs = [
+                "Mark Jürgen ChatGPT deemon",
+                "Kus on Marek Lukk?!",
+                "Roman Zaitsev — TARpv24",
+                "Illia Console God"
+            ];
+            const el = document.getElementById('roman-msg');
+            el.textContent = msgs[Math.floor(Math.random() * msgs.length)];
+            el.style.display = 'block';
+        }
+    </script>
+    <!-- ROMAN ZAITSEV OSA LÕPP -->
 </body>
 </html>
