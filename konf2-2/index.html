@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
 
@@ -17,7 +17,9 @@
     <h1 class="page-header__title">CASE-tööriistad<br/>tarkvaraarenduses</h1>
     <p class="page-header__sub">Ülevaade kolmest arvutipõhise projekteerimise võtmetööriistast</p>
     <div class="page-header__members">
-
+      <span>Milan</span>
+      <span>Osaleja 2</span>
+      <span>Osaleja 3</span>
     </div>
   </div>
 </header>
@@ -235,6 +237,92 @@
       nikiforovOpenLightbox(this);
     });
   });
+</script>
+
+<!-- ───────────────── SEKTSION 3 — LITVINENKO (draw.io) ───────────────── -->
+<section class="litvinenko-section">
+  <div class="litvinenko-section__container">
+
+    <div class="litvinenko-section__badge">Sektsioon III · Litvinenko</div>
+
+    <div class="litvinenko-stack">
+      <div class="litvinenko-panel litvinenko-panel--hero">
+        <div class="litvinenko-panel__content">
+          <h2>draw.io</h2>
+          <p>Diagrams.net — maailma populaarseim avatud lähtekoodiga diagrammitööriist</p>
+        </div>
+        <div class="litvinenko-panel__visual">
+          <img
+            src="images/drawio_logo.webp"
+            alt="draw.io logo"
+          />
+        </div>
+      </div>
+
+      <div class="litvinenko-row">
+        <div class="litvinenko-panel litvinenko-panel--history">
+          <h3>📜 Ajalugu</h3>
+          <ul class="litvinenko-history-list">
+            <li>
+              <strong>Looja</strong>
+              Gaudenz Alder (JGraph Ltd)
+            </li>
+            <li>
+              <strong>Algus</strong>
+              Tehnoloogia juured ulatuvad aastasse 2000, draw.io veebitööriist sündis 2011.
+            </li>
+            <li>
+              <strong>Eesmärk</strong>
+              Pakkuda tasuta ja privaatsust austavat alternatiivi kallitele tarkvaradele.
+            </li>
+            <li>
+              <strong>Tänapäev</strong>
+              Projekt on väga aktiivne ja areneb edasi nime all diagrams.net.
+            </li>
+          </ul>
+        </div>
+
+        <div class="litvinenko-panel litvinenko-panel--features">
+          <h3>⚡ Funktsioonid</h3>
+          <div class="litvinenko-features-grid">
+            <div class="litvinenko-feat-tag">Flowcharts & UML</div>
+            <div class="litvinenko-feat-tag">ERD & Network</div>
+            <div class="litvinenko-feat-tag">Cloud & Local</div>
+            <div class="litvinenko-feat-tag">Offline App</div>
+            <div class="litvinenko-feat-tag">GitHub Sync</div>
+            <div class="litvinenko-feat-tag">Atlassian Int.</div>
+          </div>
+          <p class="litvinenko-disclaimer">Andmeid ei salvestata kunagi serverisse — täielik kontroll oma failide üle.</p>
+        </div>
+      </div>
+
+      <div class="litvinenko-row">
+        <div class="litvinenko-panel litvinenko-panel--shot" onclick="litvinenkoOpen(this)">
+          <img src="images/drawio1.png" alt="draw.io Interface">
+          <div class="litvinenko-shot-label">Töölaua rakenduse kasutajaliides</div>
+        </div>
+        <div class="litvinenko-panel litvinenko-panel--shot" onclick="litvinenkoOpen(this)">
+          <img src="images/drawio2.png" alt="UML Diagram Example">
+          <div class="litvinenko-shot-label">Sümbolite raamatukogu</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="litvinenko-lightbox" id="litvinenkoLightbox" onclick="this.classList.remove('active')">
+  <img id="litvinenkoLightboxImg" src="" alt="">
+</div>
+
+<script>
+  function litvinenkoOpen(el) {
+    const img = el.querySelector('img');
+    const lb = document.getElementById('litvinenkoLightbox');
+    const lbImg = document.getElementById('litvinenkoLightboxImg');
+    lbImg.src = img.src;
+    lb.classList.add('active');
+  }
 </script>
 
 <footer class="page-footer">

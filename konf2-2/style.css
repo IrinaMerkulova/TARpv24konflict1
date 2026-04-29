@@ -598,3 +598,183 @@ body {
 .nikiforov-lightbox-close:hover {
   background: rgba(255,255,255,0.25);
 }
+/* ═══════════════════════════════════════════
+   SEKTSIOON 3 — LITVINENKO (draw.io)
+═══════════════════════════════════════════ */
+
+.litvinenko-section {
+  background: #050505;
+  padding: 120px 24px;
+  color: #fff;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.litvinenko-section__container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.litvinenko-section__badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #f08705;
+  border-bottom: 2px solid #f08705;
+  margin-bottom: 60px;
+}
+
+.litvinenko-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.litvinenko-panel {
+  background: #111;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.litvinenko-panel--hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  background: linear-gradient(90deg, #111 0%, #1a1a1a 100%);
+  min-height: 300px;
+}
+
+.litvinenko-panel--hero h2 {
+  font-size: clamp(48px, 8vw, 84px);
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 16px;
+  letter-spacing: -0.03em;
+}
+
+.litvinenko-panel--hero p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 300;
+}
+
+.litvinenko-panel__visual img {
+  width: 200px;
+  height: auto;
+  filter: drop-shadow(0 0 30px rgba(240, 135, 5, 0.2));
+}
+
+.litvinenko-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+@media (max-width: 800px) {
+  .litvinenko-row { grid-template-columns: 1fr; }
+}
+
+.litvinenko-panel h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: #f08705;
+  margin-bottom: 30px;
+}
+
+.litvinenko-history-list {
+  list-style: none;
+}
+
+.litvinenko-history-list li {
+  margin-bottom: 24px;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+}
+
+.litvinenko-history-list li strong {
+  display: block;
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 6px;
+  opacity: 0.4;
+}
+
+.litvinenko-features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.litvinenko-feat-tag {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 14px;
+  border-radius: 12px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.litvinenko-disclaimer {
+  margin-top: 30px;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.4);
+  font-style: italic;
+}
+
+.litvinenko-panel--shot {
+  padding: 0;
+  cursor: zoom-in;
+  transition: transform 0.4s ease;
+}
+
+.litvinenko-panel--shot:hover {
+  transform: translateY(-5px);
+  border-color: rgba(240, 135, 5, 0.3);
+}
+
+.litvinenko-panel--shot img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+}
+
+.litvinenko-shot-label {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 12px;
+  backdrop-filter: blur(4px);
+}
+
+.litvinenko-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.98);
+  z-index: 10000;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.litvinenko-lightbox.active { display: flex; }
+
+.litvinenko-lightbox img {
+  max-width: 90vw;
+  max-height: 85vh;
+  border-radius: 12px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.5);
+}
