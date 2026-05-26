@@ -165,7 +165,7 @@
                     üks tuntum on „Approaching Bearable 2“.
                 </p>
 
-                <button onclick="showMessage()">Rohkem infot</button>
+                <button onclick="toggleHusseinInfo()">Rohkem infot</button>
 
                 <div id="hussein-more-info" class="hussein-hidden-info">
                     <p>Õpin Tallinna tööshariduskeskuses (TARpv24).</p>
@@ -189,7 +189,7 @@
     </section>
 
     <script>
-        function showMessage() {
+        function toggleHusseinInfo() {
             const info = document.getElementById("hussein-more-info");
             const btn = document.querySelector(".hussein-bottom button");
 
