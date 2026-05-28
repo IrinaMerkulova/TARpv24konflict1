@@ -71,6 +71,13 @@
     box-shadow: 0 6px 24px rgba(0,0,0,0.4);
 }
 
+.artjom-section hr {
+  border: none;
+  border-top: 2px solid #45e997;
+  margin-top: 25px;
+}
+
+
 .artjom-header {
     display: flex;
     align-items: center;
