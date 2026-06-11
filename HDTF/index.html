@@ -28,7 +28,7 @@
         </div>
 
         <div class="hussein-logo-card" aria-label="draw.io logo">
-          <img src="images/draw-io.png" alt="draw.io logo">
+          <img class="hussein-lightbox-image" src="images/draw-io.png" alt="draw.io logo" tabindex="0">
         </div>
       </div>
 
@@ -73,12 +73,12 @@
         <h3>Ekraanipildid</h3>
         <div class="hussein-screenshot-grid">
           <figure>
-            <img src="images/Draw.IO-Fast-Simple-and-Free-Diagramming.png" alt="draw.io töölaud diagrammi loomisel">
+            <img class="hussein-lightbox-image" src="images/Draw.IO-Fast-Simple-and-Free-Diagramming.png" alt="draw.io töölaud diagrammi loomisel" tabindex="0">
             <figcaption>draw.io töölaud, kus vasakul on kujundid ja keskel diagrammi tööala.</figcaption>
           </figure>
 
           <figure>
-            <img src="images/drawioexample2.png" alt="draw.io näidisvooskeem">
+            <img class="hussein-lightbox-image" src="images/drawioexample2.png" alt="draw.io näidisvooskeem" tabindex="0">
             <figcaption>Näidisvooskeem, mis näitab, kuidas saab otsuseid ja samme visuaalselt esitada.</figcaption>
           </figure>
         </div>
@@ -91,5 +91,55 @@
       </section>
     </section>
   </main>
+
+  <div class="hussein-lightbox" id="hussein-lightbox" aria-hidden="true">
+    <button class="hussein-lightbox-close" type="button" aria-label="Sulge suur pilt">&times;</button>
+    <img class="hussein-lightbox-img" src="" alt="">
+  </div>
+
+  <script>
+    const husseinLightbox = document.getElementById("hussein-lightbox");
+    const husseinLightboxImg = husseinLightbox.querySelector(".hussein-lightbox-img");
+    const husseinLightboxClose = husseinLightbox.querySelector(".hussein-lightbox-close");
+    const husseinImages = document.querySelectorAll(".hussein-lightbox-image");
+
+    function openHusseinLightbox(image) {
+      husseinLightboxImg.src = image.src;
+      husseinLightboxImg.alt = image.alt;
+      husseinLightbox.classList.add("hussein-lightbox--open");
+      husseinLightbox.setAttribute("aria-hidden", "false");
+      husseinLightboxClose.focus();
+    }
+
+    function closeHusseinLightbox() {
+      husseinLightbox.classList.remove("hussein-lightbox--open");
+      husseinLightbox.setAttribute("aria-hidden", "true");
+      husseinLightboxImg.src = "";
+      husseinLightboxImg.alt = "";
+    }
+
+    husseinImages.forEach((image) => {
+      image.addEventListener("click", () => openHusseinLightbox(image));
+      image.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          openHusseinLightbox(image);
+        }
+      });
+    });
+
+    husseinLightboxClose.addEventListener("click", closeHusseinLightbox);
+    husseinLightbox.addEventListener("click", (event) => {
+      if (event.target === husseinLightbox) {
+        closeHusseinLightbox();
+      }
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && husseinLightbox.classList.contains("hussein-lightbox--open")) {
+        closeHusseinLightbox();
+      }
+    });
+  </script>
 </body>
 </html>
